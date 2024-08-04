@@ -1,9 +1,4 @@
----
-layout: post
-title: "That's No Fun: An Argument Against the Centering of Fun in Game Design"
-date: 2024-08-04 16:29:00 +0100
-categories: game design
----
+
 
 ## Introduction (100 Words)
 Games shouldn’t be fun.
