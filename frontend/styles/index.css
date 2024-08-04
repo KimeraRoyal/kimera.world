@@ -2,7 +2,7 @@
   --body-background: #f2f2f2;
   --body-color: #444;
   --heading-color: black;
-  --action-color: #d64045;
+  --action-color: #181718;
 }
 
 body {
@@ -19,7 +19,7 @@ body {
 a {
   color: var(--action-color);
   text-decoration: underline;
-  text-decoration-color: #ffb088;
+  text-decoration-color: #FF78FF;
 }
 
 h1 {
@@ -38,7 +38,7 @@ body > header {
 
 body > header img {
   display: inline-block;
-  width: 400px;
+  width: 800px;
   max-width: 100%;
 }
 
@@ -59,8 +59,7 @@ body > nav a {
 
 main {
   margin: 2rem auto 4rem;
-  max-width: 65rem;
-  min-height: calc(100vh - 200px);
+  width: 750px;
   padding: 25px 25px 50px;
   background: white;
   box-shadow: 2px 3px 3px #ddd;

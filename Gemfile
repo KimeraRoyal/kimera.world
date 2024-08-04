@@ -34,3 +34,7 @@ gem "puma", "< 7"
 
 # Or for faster parsing of HTML-only resources via Inspectors, use Nokolexbor:
 # gem "nokolexbor", "~> 0.4"
+
+gem "bridgetown-feed", "~> 3.1"
+
+gem "bridgetown-sitemap", "~> 2.0"
