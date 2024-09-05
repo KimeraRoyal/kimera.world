@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "Welcome to kimera.world"
-date: 2024-08-04 03:46:00 +0100
-categories: updates
+date: 2024-08-04
+category: updates
 ---
 Welcome to [https://kimera.world](kimera.world).
 

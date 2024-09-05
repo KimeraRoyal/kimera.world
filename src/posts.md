@@ -8,7 +8,7 @@ title: Posts
 <ul>
   {% for entry in paginator.resources %}
     <li>
-      <a href="{{ entry.relative_url }}">{{ entry.data.title }}</a>
+      <a href="{{ entry.relative_url }}">{{ entry.data.date}} - {{ entry.data.title }}</a>
     </li>
   {% endfor %}
 </ul>
