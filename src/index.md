@@ -2,4 +2,8 @@
 layout: default
 ---
 
-Welcome to kimera.world...
+kimera royal. games, music, writing, videos, etc.
+
+[itch.io](https://kimeraroyal.itch.io)
+[youtube](https://youtube.com/@TECHNOJESTER)
+[linktree](https://linktr.ee/kimeraroyal)
