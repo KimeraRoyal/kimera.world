@@ -3,7 +3,7 @@ layout: page
 title: About
 ---
 
-Kimera Royal [born: Kingston upon Thames, London, 2001] is a game designer, musician, and enjoyer of the weird, the novel, and the unsung. She holds a Bachelor of Science in Game Software Engineering [graduated: [Bournemouth University](https://www.bournemouth.ac.uk/study/courses/bsc-hons-games-software-engineering), 2024] and a BTEC Extended Diploma in Music Technology [graduated: [Kingston College](https://stcg.ac.uk/kingston-college/music/l3-btec-national-foundation-diploma-in-music-production-technology), 2020]. She is currently searching for a graduate degree.
+Kimera Royal [she/her] is a game designer, musician, and enjoyer of the weird, the novel, and the unsung. She holds a Bachelor of Science in Game Software Engineering [graduated: [Bournemouth University](https://www.bournemouth.ac.uk/study/courses/bsc-hons-games-software-engineering), 2024] and a BTEC Extended Diploma in Music Technology [graduated: [Kingston College](https://stcg.ac.uk/kingston-college/music/l3-btec-national-foundation-diploma-in-music-production-technology), 2020]. She is currently searching for a graduate degree.
 
 Her fields of interest are experimental game design, interactive media, hypertext, and the blending of games with other mediums. Outside of study and work, she is interested in webcomics and a large assortment of music, especially emo. Her favourite band is Linkin Park.
 
