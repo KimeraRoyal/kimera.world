@@ -1,30 +1,30 @@
 <footer>
   <div class="h-card profile">
     <div class="bio">
-      <img class="u-photo photo" src="/images/icon.png" />
+      <img class="u-photo photo" src="{{ '/images/icon.png' | relative_url }}" />
       <div class="bio-text">
-        <a class="u-url u-uid url" href="https://kimera.world" rel="me">
+        <a class="u-url u-uid url" href="{{ metadata.url }}" rel="me">
           <span class="p-given-name given-name">Kimera</span>
           <span class="p-family-name family-name">Royal</span>
         </a>
         [<span class="p-gender-identity gender-identity">she/her</span>]
         is a:
         <ul class="p-role role">
-          <li><a class="p-category role-category" href="https://kimeraroyal.itch.io/" ref="me">Game Developer</a>,</li>
-          <li><a class="p-category role-category" href="https://technojester.bandcamp.com/" ref="me">Musician</a>,</li>
-          <li><a class="p-category role-category" href="https://orcid.org/0009-0009-3347-8055" ref="me">Scholar</a>,</li>
-          <li><a class="p-category role-category" href="https://youtube.com/@TECHNOJESTER" ref="me">YouTuber</a>.</li>
+          <li><a class="p-category role-category" href="{{ metadata.itch }}" ref="me">Game Developer</a>,</li>
+          <li><a class="p-category role-category" href="{{ metadata.bandcamp }}" ref="me">Musician</a>,</li>
+          <li><a class="p-category role-category" href="{{ metadata.orcid }}" ref="me">Scholar</a>,</li>
+          <li><a class="p-category role-category" href="{{ metadata.youtube }}" ref="me">YouTuber</a>.</li>
         </ul>
       </div>
     </div>
     <div class="external-links">
       <h2 class="elsewhere">Find me elsewhere:</h2>
       <ul>
-        <li><a class="u-email email email-link" href="mailto:kim@kimera.world" rel="me">kim@kimera.world</a></li>
-        <li><a class="u-url url linktree-link" href="https://linktr.ee/KimeraRoyal" rel="me">Linktree</a></li>
-        <li><a class="u-url url twitter-link" href="https://twitter.com/KimeraRoyal" rel="me">Twitter</a></li>
-        <li><a class="u-url url bluesky-link" href="https://bsky.app/profile/kimera.world" rel="me">Bluesky</a></li>
-        <li><a class="u-url url fediverse-link" href="https://peoplemaking.games/deck/@KimeraRoyal" rel="me">Fediverse</a></li>
+        <li><a class="u-email email email-link" href="mailto:{{ metadata.email }}" rel="me">kim@kimera.world</a></li>
+        <li><a class="u-url url linktree-link" href="{{ metadata.linktree }}" rel="me">Linktree</a></li>
+        <li><a class="u-url url twitter-link" href="{{ metadata.twitter }}" rel="me">Twitter</a></li>
+        <li><a class="u-url url bluesky-link" href="{{ metadata.bluesky }}" rel="me">Bluesky</a></li>
+        <li><a class="u-url url fediverse-link" href="{{ metadata.fediverse }}" rel="me">Fediverse</a></li>
       </ul>
     </div>
   </div>
