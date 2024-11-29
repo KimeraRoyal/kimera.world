@@ -33,6 +33,10 @@ template_engine: liquid
 pagination:
   enabled: true
 
+collections:
+  projects:
+    output: true
+    permalink: simple
   resources:
     output: true
     permalink: simple

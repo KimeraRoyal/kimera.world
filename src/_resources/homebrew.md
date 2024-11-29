@@ -3,7 +3,7 @@ layout: page
 title: Homebrew Resources
 ---
 
-A collection of homebrew [resources](../resources).
+A collection of homebrew [resources](..).
 
 ## GBA
 [TONC - GBA Programming in rot13](https://gbadev.net/tonc/)

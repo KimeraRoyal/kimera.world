@@ -3,7 +3,7 @@ layout: page
 title: Music Resources
 ---
 
-A collection of music [resources](../resources).
+A collection of music [resources](..).
 
 ## VSTs
 [Synth1 by Daichi Laboratory](https://daichilab.sakura.ne.jp/softsynth/index.html)
