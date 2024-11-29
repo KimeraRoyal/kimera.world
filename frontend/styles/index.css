@@ -81,3 +81,49 @@ hr {
   border-top: 2px dotted #bbb;
   margin: 3rem 0;
 }
+
+.profile {
+  margin: 2rem auto 4rem;
+  width: 350px;
+  height: 250px;
+  
+  background-color: white;
+  box-shadow: 2px 3px 3px #ddd;
+
+  padding: 25px 25px 25px 25px;
+  
+  border-style: solid;
+  border-color: black;
+  border-width: 1px;
+  border-radius: 3px;
+}
+
+.profile ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.bio {
+  display: flex;
+}
+
+.bio-text {
+  margin-left: 10px;
+
+  text-align: left;
+}
+
+.elsewhere {
+  margin: 0px;
+  padding: 10px 0px 0px 0px;
+}
+
+.external-links {
+  text-align: center;
+}
+
+.external-links li {
+  width: 50%;
+  float: left;
+}
