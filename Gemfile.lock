@@ -142,5 +142,8 @@ DEPENDENCIES
   bridgetown-sitemap (~> 2.0)
   puma (< 7)
 
+RUBY VERSION
+   ruby 3.3.3p89
+
 BUNDLED WITH
    2.5.17
