@@ -1,31 +1,38 @@
 <footer>
   <div class="h-card profile content-box">
-    <div class="bio">
-      <img class="u-photo photo" src="{{ '/images/icon.png' | relative_url }}" />
-      <div class="bio-text">
-        <a class="u-url u-uid url" href="{{ metadata.url }}" rel="me">
-          <span class="p-given-name given-name">Kimera</span>
-          <span class="p-family-name family-name">Royal</span>
-        </a>
-        [<span class="p-gender-identity gender-identity">she/her</span>]
-        is a:
-        <ul class="p-role role">
-          <li><a class="p-category role-category" href="{{ metadata.itch }}" ref="me">Game Developer</a>,</li>
-          <li><a class="p-category role-category" href="{{ metadata.bandcamp }}" ref="me">Musician</a>,</li>
-          <li><a class="p-category role-category" href="{{ metadata.orcid }}" ref="me">Scholar</a>,</li>
-          <li><a class="p-category role-category" href="{{ metadata.youtube }}" ref="me">YouTuber</a>.</li>
+    {% render "titlebar", label: 'Profile', icon: '/images/icon_profile.png' %}
+
+    <div class="content">
+      <div class="bio">
+        <img class="u-photo photo" src="{{ '/images/icon.png' | relative_url }}" />
+
+        <div class="bio-text">
+          <a class="u-url u-uid url" href="{{ metadata.url }}" rel="me">
+            <span class="p-given-name given-name">Kimera</span>
+            <span class="p-family-name family-name">Royal</span>
+          </a>
+          [<span class="p-gender-identity gender-identity">she/her</span>]
+          is a:
+          <ul class="p-role role">
+            <li><a class="p-category role-category" href="{{ metadata.itch }}" ref="me">Game Developer</a>,</li>
+            <li><a class="p-category role-category" href="{{ metadata.bandcamp }}" ref="me">Musician</a>,</li>
+            <li><a class="p-category role-category" href="{{ metadata.orcid }}" ref="me">Scholar</a>,</li>
+            <li><a class="p-category role-category" href="{{ metadata.youtube }}" ref="me">YouTuber</a>.</li>
+          </ul>
+        </div> <!-- bio-text -->
+      </div> <!-- bio -->
+
+      <div class="external-links">
+        <h2 class="elsewhere">Find me elsewhere:</h2>
+        <ul>
+          <li><a href="mailto:{{ metadata.email }}" rel="me">kim@kimera.world</a></li>
+          <li><a href="{{ metadata.linktree }}" rel="me">Linktree</a></li>
+          <li><a href="{{ metadata.twitter }}" rel="me">Twitter</a></li>
+          <li><a href="{{ metadata.bluesky }}" rel="me">Bluesky</a></li>
+          <li><a href="{{ metadata.mastodon }}" rel="me">Mastodon</a></li>
         </ul>
-      </div>
-    </div>
-    <div class="external-links">
-      <h2 class="elsewhere">Find me elsewhere:</h2>
-      <ul>
-        <li><a href="mailto:{{ metadata.email }}" rel="me">kim@kimera.world</a></li>
-        <li><a href="{{ metadata.linktree }}" rel="me">Linktree</a></li>
-        <li><a href="{{ metadata.twitter }}" rel="me">Twitter</a></li>
-        <li><a href="{{ metadata.bluesky }}" rel="me">Bluesky</a></li>
-        <li><a href="{{ metadata.mastodon }}" rel="me">Mastodon</a></li>
-      </ul>
-    </div>
-  </div>
+      </div>  <!-- external-links -->
+
+    </div> <!-- content -->
+  </div> <!-- content-box -->
 </footer>
