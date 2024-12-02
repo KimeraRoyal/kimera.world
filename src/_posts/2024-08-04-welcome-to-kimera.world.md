@@ -3,7 +3,6 @@ layout: post
 title: "Welcome to kimera.world"
 date: 2024-08-04
 category: updates
-icon: "/images/icon_post.png"
 ---
 Welcome to [https://kimera.world](kimera.world).
 
