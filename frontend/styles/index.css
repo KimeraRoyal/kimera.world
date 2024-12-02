@@ -1,5 +1,8 @@
 :root {
-  --body-background: #f2f2f2;
+  --body-background: #DABAE2;
+  --content-background: #FAE8FF;
+  --decoration-color: #FF78FF;
+
   --body-color: #444;
   --heading-color: black;
   --action-color: #181718;
@@ -19,7 +22,7 @@ body {
 a {
   color: var(--action-color);
   text-decoration: underline;
-  text-decoration-color: #FF78FF;
+  text-decoration-color: var(--decoration-color);
 }
 
 h1 {
@@ -60,14 +63,22 @@ body > nav a {
 main {
   margin: 2rem auto 4rem;
   width: 750px;
-  padding: 25px 25px 50px;
-  background: white;
-  box-shadow: 2px 3px 3px #ddd;
-  border-radius: 3px;
 
   @media (max-width: 500px) {
     padding: 16px 16px 50px;
   }
+}
+
+.content-box {
+  background-color: var(--content-background);
+  box-shadow: 5px 5px var(--decoration-color), 10px 10px #CD5BC7, 15px 15px #95398B;
+
+  padding: 25px 25px 25px 25px;
+  
+  border-style: solid;
+  border-color: black;
+  border-width: 1px;
+  border-radius: 3px;
 }
 
 footer {
@@ -80,4 +91,40 @@ hr {
   border: none;
   border-top: 2px dotted #bbb;
   margin: 3rem 0;
+}
+
+.profile {
+  margin: 2rem auto 4rem;
+  width: 350px;
+  height: 250px;
+}
+
+.profile ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.bio {
+  display: flex;
+}
+
+.bio-text {
+  margin-left: 10px;
+
+  text-align: left;
+}
+
+.elsewhere {
+  margin: 0px;
+  padding: 10px 0px 0px 0px;
+}
+
+.external-links {
+  text-align: center;
+}
+
+.external-links li {
+  width: 50%;
+  float: left;
 }
