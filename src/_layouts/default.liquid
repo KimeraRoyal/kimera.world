@@ -7,8 +7,19 @@
     {% render "navbar", metadata: site.metadata, resource: resource %}
 
     <main class="content-box">
-      {{ content }}
-    </main>
+      {% if data.icon %}
+        {% assign icon = data.icon %}
+      {% elsif layout.data.icon %}
+        {% assign icon = layout.data.icon %}
+      {% else %}
+        {% assign icon = nil %}
+      {% endif %}
+      {% render "titlebar", label: data.title, icon: icon %}
+
+      <div class="content">
+        {{ content }}
+      </div> <!-- content -->
+    </main> <!-- content-box -->
 
     {% render "footer", metadata: site.metadata %}
   </body>

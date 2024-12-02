@@ -1,5 +1,7 @@
 ---
 layout: default
+title: Home
+icon: "/images/icon_home.png"
 ---
 
 kimera royal. games, music, writing, videos, etc.

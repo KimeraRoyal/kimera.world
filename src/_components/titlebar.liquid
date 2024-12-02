@@ -1,0 +1,14 @@
+<div class="title-bar">
+    <div class="title-bar-label title-bar-content">
+        {% if icon %}
+            <img class="title-bar-icon" src="{{ icon | relative_url }}" />
+        {% endif %}
+        {{ label }}
+    </div> <!-- title-bar-label -->
+
+    <div class="title-bar-buttons title-bar-content">
+        <img class="title-bar-button" src="{{ '/images/icon_minimise.png' | relative_url }}" />
+        <img class="title-bar-button" src="{{ '/images/icon_maximise.png' | relative_url }}" />
+        <img class="title-bar-button" src="{{ '/images/icon_close.png' | relative_url }}" />
+    </div> <!-- title-bar-buttons -->
+</div> <!-- title-bar -->

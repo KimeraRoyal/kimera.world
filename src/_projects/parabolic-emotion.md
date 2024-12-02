@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: project
 title: Wherein She Completely Cuts Herself Off from Reality; A Parabolic Emotion from Recovery into Despair
 category: games
 ---

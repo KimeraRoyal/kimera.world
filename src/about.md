@@ -1,6 +1,7 @@
 ---
 layout: page
 title: About
+icon: "/images/icon_about.png"
 ---
 
 Kimera Royal [she/her] is a game designer, musician, and enjoyer of the weird, the novel, and the unsung. She holds a Bachelor of Science in Game Software Engineering [graduated: [Bournemouth University](https://www.bournemouth.ac.uk/study/courses/bsc-hons-games-software-engineering), 2024] and a BTEC Extended Diploma in Music Technology [graduated: [Kingston College](https://stcg.ac.uk/kingston-college/music/l3-btec-national-foundation-diploma-in-music-production-technology), 2020]. She is currently searching for a graduate degree.

@@ -1,11 +1,29 @@
 :root {
   --body-background: #DABAE2;
   --content-background: #FAE8FF;
+  
   --decoration-color: #FF78FF;
+  --light-color: #FFBFF3;
 
   --body-color: #444;
   --heading-color: black;
   --action-color: #181718;
+
+  --titlebar-height: 18px;
+}
+
+@font-face {
+  font-family: '04B_24';
+  src: url('/fonts/04B_24__.woff'), url('/fonts/04B_24__.TTF');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: '04B_25';
+  src: url('/fonts/04B_25__.woff'), url('/fonts/04B_25__.TTF');
+  font-weight: normal;
+  font-style: normal;
 }
 
 body {
@@ -72,8 +90,6 @@ main {
 .content-box {
   background-color: var(--content-background);
   box-shadow: 5px 5px var(--decoration-color), 10px 10px #CD5BC7, 15px 15px #95398B;
-
-  padding: 25px 25px 25px 25px;
   
   border-style: solid;
   border-color: black;
@@ -81,10 +97,71 @@ main {
   border-radius: 3px;
 }
 
+.title-bar {
+  background-image: url("/images/title_bar.png");
+
+  border-bottom: solid;
+  border-color: black;
+  border-width: 1px;
+
+  display: block;
+
+  height: var(--titlebar-height);
+
+  padding: 0px 0px 0px 4px;
+}
+
+.title-bar-content {
+  display: flex;
+  align-items: center;
+
+  width: max-content;
+  height: var(--titlebar-height);
+  padding: 0px;
+  margin: 0px;
+}
+
+.title-bar-label {
+  font-size: 12px;
+  font-family: '04B_25';
+  color: white;
+  text-align: left;
+  line-height: var(--titlebar-height);
+}
+
+.title-bar-buttons {
+  float: right;
+
+  margin-top: calc(var(--titlebar-height) * -1); /* this sucks but without it the buttons show up underneath the title bar */
+}
+
+.title-bar-icon {
+  padding: 3px 6px 3px 0px;
+}
+
+.title-bar-button {
+  background-image: url("/images/title_bar_button.png");
+  
+  border-style: solid;
+  border-color: var(--light-color);
+  border-width: 1px;
+  border-radius: 4px;
+
+  float: right;
+  
+  padding: 1px;
+  margin: 1px 5px 1px 2px;
+}
+
+.content {
+  padding: 25px 25px 25px 25px;
+}
+
 footer {
-  text-align: center;
-  margin-bottom: 4rem;
   font-size: 1em;
+  text-align: center;
+
+  margin-bottom: 4rem;
 }
 
 hr {
@@ -94,13 +171,15 @@ hr {
 }
 
 .profile {
+  width: 400px;
+  height: calc(300px + var(--titlebar-height));
+
   margin: 2rem auto 4rem;
-  width: 350px;
-  height: 250px;
 }
 
 .profile ul {
   list-style-type: none;
+
   margin: 0px;
   padding: 0px;
 }
