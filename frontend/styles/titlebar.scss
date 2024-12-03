@@ -1,0 +1,59 @@
+@use 'palette.scss';
+
+$height: 18px;
+
+.title-bar {
+    background-image: url("/images/titlebar/bg.png");
+  
+    border-bottom: solid;
+    border-color: black;
+    border-width: 1px;
+  
+    display: block;
+  
+    height: $height;
+  
+    padding: 0px 0px 0px 4px;
+  }
+  
+  .title-bar-content {
+    display: flex;
+    align-items: center;
+  
+    width: max-content;
+    height: $height;
+    padding: 0px;
+    margin: 0px;
+  }
+  
+  .title-bar-label {
+    font-size: 12px;
+    font-family: '04B_25';
+    color: white;
+    text-align: left;
+    line-height: $height;
+  }
+  
+  .title-bar-buttons {
+    float: right;
+  
+    margin-top: calc($height * -1); /* this sucks but without it the buttons show up underneath the title bar */
+  }
+  
+  .title-bar-icon {
+    padding: 3px 6px 3px 0px;
+  }
+  
+  .title-bar-button {
+    background-image: url("/images/titlebar/bg_button.png");
+    
+    border-style: solid;
+    border-color: palette.$light-color;
+    border-width: 1px;
+    border-radius: 4px;
+  
+    float: right;
+    
+    padding: 1px;
+    margin: 1px 5px 1px 2px;
+  }
