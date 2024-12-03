@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Miscallaneous Resources
+title: Miscellaneous Resources
 ---
 
 A collection of [resources](..) that are unrelated to anything else. Mostly quirky oddities.
