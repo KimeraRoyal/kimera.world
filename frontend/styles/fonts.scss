@@ -1,0 +1,25 @@
+@font-face {
+    font-family: '04B_24';
+    src: url('/fonts/04B_24__.woff'), url('/fonts/04B_24__.TTF');
+    font-weight: normal;
+    font-style: normal;
+}
+  
+@font-face {
+    font-family: '04B_25';
+    src: url('/fonts/04B_25__.woff'), url('/fonts/04B_25__.TTF');
+    font-weight: normal;
+    font-style: normal;
+}
+
+%font-04b24 {
+    font-size: 8px;
+    font-family: '04B_28';
+    color: white;
+}
+
+%font-04b25 {
+    font-size: 12px;
+    font-family: '04B_25';
+    color: white;
+}
