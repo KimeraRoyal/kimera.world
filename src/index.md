@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Home
-icon: "/images/icon_home.png"
+icon: "/images/titlebar/icon_home.png"
 ---
 
 games, music, writing, videos, etc.

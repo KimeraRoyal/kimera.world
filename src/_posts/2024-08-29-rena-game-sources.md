@@ -4,7 +4,7 @@ title: '"I Love Copyright Infringement!" Video Sources'
 date: 2024-08-29
 category: video sources
 tags: games game-studies indie-games video sources plunderludics art
-icon: "/images/icon_video.png"
+icon: "/images/titlebar/icon_video.png"
 ---
 This article is a list of sources for footage within this video:
 <center><iframe width="480" height="360" src="https://www.youtube.com/embed/qRCc7l56mfg" title="I Love Copyright Infringement!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></center>

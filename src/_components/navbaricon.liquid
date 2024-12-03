@@ -1,0 +1,10 @@
+<a class="navbar-element" href="{{ url | relative_url }}">
+    {% if icon == nil %}
+        {% assign icon='/images/desktop/file.png' %}
+    {% endif %}
+    <div class="navbar-element-icon-region">
+        <img class="navbar-element-icon" src="{{ icon | relative_url }}" />
+        <img class="navbar-element-arrow" src="{{  'images/desktop/arrow.png' | relative_url }}" />
+    </div> <!-- navbar-element-icon -->
+    {{ label }}
+</a> <!-- navbar-element -->

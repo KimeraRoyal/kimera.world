@@ -3,7 +3,7 @@ layout: page
 paginate:
   collection: posts
 title: Posts
-icon: "/images/icon_post.png"
+icon: "/images/titlebar/icon_post.png"
 ---
 
 <ul>

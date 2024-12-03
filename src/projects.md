@@ -3,7 +3,7 @@ layout: page
 paginate:
   collection: projects
 title: Projects
-icon: "/images/icon_projects.png"
+icon: "/images/titlebar/icon_projects.png"
 ---
 
 <ul>
