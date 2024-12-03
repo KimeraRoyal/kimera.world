@@ -1,0 +1,51 @@
+@use 'palette.scss';
+
+$icon-size: 80px;
+
+.navbar-element {
+    display: grid;
+  
+    text-align: center;
+  }
+  
+  .navbar-element-icon-region {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .navbar-icon-container {
+    width: $icon-size;
+    height: $icon-size;
+
+    padding: 1px;
+    margin: 0px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .navbar-icon-container:hover {
+    border: 1px solid;
+    border-image: url(/images/desktop/border.png) 1 round;
+  
+    padding: 0px;
+  }
+  
+  .navbar-element-icon {
+
+    filter: drop-shadow(4px 2px 0px palette.$background-color-dark);
+  }
+  
+  .navbar-element-arrow {
+    background-color: white;
+  
+    position: absolute;
+    
+    margin-left: -$icon-size / 2 - 1px;
+    margin-top: -14px;
+  
+    padding: 2px;
+    
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+  }

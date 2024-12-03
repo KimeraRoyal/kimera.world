@@ -1,21 +1,10 @@
 @use 'palette.scss';
+
+@use "navbar.scss";
 @use "titlebar.scss";
 
-@font-face {
-  font-family: '04B_24';
-  src: url('/fonts/04B_24__.woff'), url('/fonts/04B_24__.TTF');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: '04B_25';
-  src: url('/fonts/04B_25__.woff'), url('/fonts/04B_25__.TTF');
-  font-weight: normal;
-  font-style: normal;
-}
-
 body {
+  background-color: palette.$background-color;
   background: url('/images/bg.png');
 
   font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen",
@@ -77,43 +66,6 @@ main {
   }
 }
 
-.navbar-element {
-  display: grid;
-
-  text-align: center;
-}
-
-.navbar-element-icon-region {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.navbar-element-icon {
-  padding: 1px;
-}
-
-.navbar-element-icon:hover {
-  border: 1px solid;
-  border-image: url(/images/desktop/border.png) 1 round;
-
-  padding: 0px;
-}
-
-.navbar-element-arrow {
-  background-color: white;
-
-  position: absolute;
-  
-  margin-left: -82px;
-  margin-top: 68px;
-
-  padding: 2px;
-  
-  border-style: solid;
-  border-color: black;
-  border-width: 1px;
-}
-
 .content-box {
   background: palette.$body-background-color;
   color: palette.$body-text-color;
@@ -144,7 +96,7 @@ hr {
 
 .profile {
   width: 400px;
-  height: calc(300px + titlebar.$height);
+  height: 300px + titlebar.$height;
 
   margin: 2rem auto 4rem;
 }
