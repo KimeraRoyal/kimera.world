@@ -3,11 +3,11 @@
 </header>
 
 <nav>
-  <ul>
-    <li><a href="{{ '/' | relative_url }}">Home</a></li>
-    <li><a href="{{ '/about' | relative_url }}">About</a></li>
-    <li><a href="{{ '/projects' | relative_url }}">Projects</a></li>
-    <li><a href="{{ '/resources' | relative_url }}">Resources</a></li>
-    <li><a href="{{ '/posts' | relative_url }}">Posts</a></li>
+  <ul class="navbar-icons">
+    <li>{% render "navbaricon", label: 'Home', icon: '/images/desktop/home.png', url: '/' %}</li>
+    <li>{% render "navbaricon", label: 'About', icon: '/images/desktop/about.png', url: '/about' %}</li>
+    <li>{% render "navbaricon", label: 'Projects', icon: '/images/desktop/projects.png', url: '/projects' %}</a></li>
+    <li>{% render "navbaricon", label: 'Resources', url: '/resources' %}</a></li>
+    <li>{% render "navbaricon", label: 'Posts', icon: '/images/desktop/blog.png', url: '/posts' %}</a></li>
   </ul>
 </nav>

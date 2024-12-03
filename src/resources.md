@@ -3,6 +3,7 @@ layout: page
 paginate:
   collection: resources
 title: Resources
+icon: "/images/titlebar/icon_resources.png"
 ---
 
 Right now, this is just a rough collection of resources from other places on the web. I struggle with remembering things, especially random websites and resources I've encountered, so this is mostly an accessibility aid for me. I'd like to organise it more, make it look nicer, and write a bit about everything eventually.
