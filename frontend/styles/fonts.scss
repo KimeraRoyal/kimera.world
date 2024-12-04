@@ -1,4 +1,11 @@
 @font-face {
+    font-family: '04B_19';
+    src: url('/fonts/04B_19__.woff'), url('/fonts/04B_19__.TTF');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
     font-family: '04B_24';
     src: url('/fonts/04B_24__.woff'), url('/fonts/04B_24__.TTF');
     font-weight: normal;
@@ -12,14 +19,20 @@
     font-style: normal;
 }
 
+%font-04b19 {
+    font-size: 14px;
+    font-family: '04B_19', monospace;
+    color: white;
+}
+
 %font-04b24 {
     font-size: 8px;
-    font-family: '04B_28';
+    font-family: '04B_24', monospace;
     color: white;
 }
 
 %font-04b25 {
     font-size: 12px;
-    font-family: '04B_25';
+    font-family: '04B_25', monospace;
     color: white;
 }

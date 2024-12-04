@@ -1,12 +1,12 @@
 <a class="navbar-element" href="{{ url | relative_url }}">
     {% if icon == nil %}
-        {% assign icon='/images/desktop/file.png' %}
+        {% assign icon='file' %}
     {% endif %}
-    <div class="navbar-element-icon-region">
+    <div class="navbar-element-icon-region" title="{{ label }}">
         <div class="navbar-icon-container">
-            <img class="navbar-element-icon" src="{{ icon | relative_url }}" />
+            <img class="navbar-element-icon" src="{{ icon | prepend: 'images/desktop/' | append: '.png' | relative_url }}" />
         </div>
         <img class="navbar-element-arrow" src="{{  'images/desktop/arrow.png' | relative_url }}" />
     </div> <!-- navbar-element-icon -->
-    {{ label }}
+    <div class="navbar-label {{ icon | prepend: 'navbar-label-' }}" title="{{ label }}"/>
 </a> <!-- navbar-element -->

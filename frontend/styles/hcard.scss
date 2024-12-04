@@ -1,0 +1,42 @@
+@use "titlebar.scss";
+
+$width: 400px;
+$height: 300px;
+
+.profile {
+    width: $width;
+    height: $height + titlebar.$height;
+  
+    margin: 2rem auto 4rem;
+  }
+  
+  .profile ul {
+    list-style-type: none;
+  
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  .bio {
+    display: flex;
+  }
+  
+  .bio-text {
+    margin-left: 10px;
+  
+    text-align: left;
+  }
+  
+  .elsewhere {
+    margin: 0px;
+    padding: 10px 0px 0px 0px;
+  }
+  
+  .external-links {
+    text-align: center;
+  }
+  
+  .external-links li {
+    width: 50%;
+    float: left;
+  }

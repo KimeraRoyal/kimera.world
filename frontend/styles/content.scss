@@ -1,0 +1,27 @@
+@use "palette.scss";
+
+$width: 750px;
+
+main {
+    margin: 2rem auto 4rem;
+    width: $width;
+  
+    @media (max-width: 500px) {
+        padding: 16px 16px 50px;
+    }
+}
+  
+.content-box {
+    background: palette.$body-background-color;
+    color: palette.$body-text-color;
+    box-shadow: 5px 5px palette.$main-color, 10px 10px palette.$dark-color, 15px 15px palette.$darker-color;
+    
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 3px;
+  }
+  
+.content {
+    padding: 25px 25px 25px 25px;
+}
