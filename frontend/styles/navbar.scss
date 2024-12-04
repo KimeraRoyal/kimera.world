@@ -3,6 +3,8 @@
 
 $icon-size: 80px;
 
+$character-height: 11px;
+
 .navbar-element {
   display: grid;
   
@@ -63,21 +65,21 @@ $icon-size: 80px;
 }
 
 .navbar-label-about {
-  background-position-y: 12px;
+  background-position-y: 51px;
   width: 39px;
 }
 
 .navbar-label-projects {
-  background-position-y: 25px;
+  background-position-y: 38px;
   width: 63px;
 }
 
 .navbar-label-resources {
-  background-position-y: 38px;
+  background-position-y: 25px;
   width: 71px;
 }
 
 .navbar-label-blog {
-  background-position-y: 51px;
+  background-position-y: 12px;
   width: 39px;
 }
