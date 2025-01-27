@@ -13,7 +13,7 @@ icon: "/images/titlebar/icon_projects.png"
           <a class ="project-cover" href="{{ entry.relative_url }}"><img class="project-cover-image" src="{{ entry.data.cover | relative_url }}" /></a>
           <div class="project-padding"></div>
           <div class="project-info">
-            <a class="project-title" href="{{ entry.relative_url }}">{{ entry.data.title }}</a>
+            <a class="project-title" href="{{ entry.relative_url }}">{{ entry.data.title }}</a> ({{ entry.data.year }})
             <div class="project-blurb">{{ entry.data.blurb }}</div>
           </div>
       </li>
