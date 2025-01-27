@@ -34,15 +34,19 @@
     width: 100%;
 }
 
-.project-entry:nth-child(3n - 2) .project-cover {
+.project-cover-image {
+    width: 100%;
+}
+
+.project-entry:nth-child(3n - 2) .project-cover-image {
     clip-path: polygon(3% 4%, 100% 0%, 97% 98%, 0% 100%)
 }
 
-.project-entry:nth-child(3n - 1) .project-cover {
+.project-entry:nth-child(3n - 1) .project-cover-image {
     clip-path: polygon(0% 0%, 99% 3%, 96% 100%, 2% 96%)
 }
 
-.project-entry:nth-child(3n) .project-cover {
+.project-entry:nth-child(3n) .project-cover-image {
     clip-path: polygon(0% 4%, 95% 0%, 100% 100%, 4% 97%)
 }
 

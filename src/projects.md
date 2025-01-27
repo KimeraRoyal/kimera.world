@@ -10,12 +10,12 @@ icon: "/images/titlebar/icon_projects.png"
   <ul class="project-entries">
     {% for entry in paginator.resources %}
       <li class="project-entry">
-        <img class="project-cover" src="{{ entry.data.cover | relative_url }}" />
-        <div class="project-padding"></div>
-        <div class="project-info">
-          <a class="project-title" href="{{ entry.relative_url }}">{{ entry.data.title }}</a>
-          <div class="project-blurb">{{ entry.data.blurb }}</div>
-        </div>
+          <a class ="project-cover" href="{{ entry.relative_url }}"><img class="project-cover-image" src="{{ entry.data.cover | relative_url }}" /></a>
+          <div class="project-padding"></div>
+          <div class="project-info">
+            <a class="project-title" href="{{ entry.relative_url }}">{{ entry.data.title }}</a>
+            <div class="project-blurb">{{ entry.data.blurb }}</div>
+          </div>
       </li>
     {% endfor %}
   </ul>
