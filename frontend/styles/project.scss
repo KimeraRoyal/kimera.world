@@ -10,7 +10,7 @@
 
 .project-entry {
     margin-bottom: 15px;
-    padding-bottom: 10px;
+    padding-bottom: 15px;
     
     border-style: solid;
     border-color: black;
@@ -20,6 +20,9 @@
 }
 
 .project-entry:last-child {
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+
     border-width: 0px 0px 0px 0px;
 }
 
