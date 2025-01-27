@@ -15,7 +15,7 @@ icon: "/images/titlebar/icon_projects.png"
           <div class="project-info">
             <div class="project-tags">
               {% for tag in entry.data.tags %}
-                <a href=".projects/{{ tag }}"><div class="project-tag">{{ tag }}</div></a>
+                <a href="projects/{{ tag }}"><div class="project-tag">{{ tag }}</div></a>
               {% endfor %}
             </div>
             <a class="project-title" href="{{ entry.relative_url }}">{{ entry.data.title }}</a> ({{ entry.data.year }})
