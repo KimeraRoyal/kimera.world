@@ -1,0 +1,62 @@
+.projects {
+}
+
+.project-entries {
+    margin: 0px;
+    padding: 0px;
+
+    list-style-type: none;
+}
+
+.project-entry {
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    
+    border-style: solid;
+    border-color: black;
+    border-width: 0px 0px 1px 0px;
+
+    display: flex;
+}
+
+.project-entry:last-child {
+    border-width: 0px 0px 0px 0px;
+}
+
+.project-entry:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.project-cover {
+    width: 100%;
+}
+
+.project-entry:nth-child(3n - 2) .project-cover {
+    clip-path: polygon(3% 4%, 100% 0%, 97% 98%, 0% 100%)
+}
+
+.project-entry:nth-child(3n - 1) .project-cover {
+    clip-path: polygon(0% 0%, 99% 3%, 96% 100%, 2% 96%)
+}
+
+.project-entry:nth-child(3n) .project-cover {
+    clip-path: polygon(0% 4%, 95% 0%, 100% 100%, 4% 97%)
+}
+
+.project-padding {
+    width: 25px;
+}
+
+.project-info {
+    width: 100%;
+}
+
+.project-blurb {
+    margin-top: 10px;
+
+    font-style: italic;
+}
+
+.project-banner {
+    width: 100%;
+}
