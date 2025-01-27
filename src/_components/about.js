@@ -3,11 +3,10 @@ const bands = ["Linkin Park", "Bring Me The Horizon", "Pierce the Veil", "Set to
 
 function randomizeElement(id, values)
 {
-    const index = Math.floor(Math.random() * values.length);
-
     let element = document.getElementById(id);
     if(element == null) { return; }
 
+    const index = Math.floor(Math.random() * values.length);
     element.innerHTML = values[index];
 }
 
