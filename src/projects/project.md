@@ -2,9 +2,14 @@
 layout: page
 paginate:
   collection: projects
-title: Projects
+title: Projects in category ":prototype-term"
+prototype:
+    collection: projects
+    term: tag
 icon: "/images/titlebar/icon_projects.png"
 ---
+
+<a href="../projects"><< Return to Projects</a><br>
 
 <div class="projects">
   <ul class="project-entries">
@@ -15,7 +20,7 @@ icon: "/images/titlebar/icon_projects.png"
           <div class="project-info">
             <div class="project-tags">
               {% for tag in entry.data.tags %}
-                <a href="./{{ tag }}"><div class="project-tag">{{ tag }}</div></a>
+                <a href="{{ tag }}"><div class="project-tag">{{ tag }}</div></a>
               {% endfor %}
             </div>
             <a class="project-title" href="{{ entry.relative_url }}">{{ entry.data.title }}</a> ({{ entry.data.year }})

@@ -5,6 +5,8 @@ blurb: My Bachelors degree dissertation project. An anthology of indefinitely re
 year: 2024
 category: games
 
+tags: games academia
+
 banner: "/images/projects/parabolic_banner.png"
 cover: "/images/projects/parabolic_cover.png"
 ---
