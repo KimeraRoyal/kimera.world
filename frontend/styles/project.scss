@@ -1,5 +1,9 @@
 @use 'palette.scss';
 
+$entry-mask1: polygon(3% 4%, 100% 0%, 97% 98%, 0% 100%);
+$entry-mask2: polygon(0% 0%, 99% 3%, 96% 100%, 2% 96%);
+$entry-mask3: polygon(0% 4%, 95% 0%, 100% 100%, 4% 97%);
+
 .projects {
     margin-top: 10px;
 }
@@ -20,6 +24,7 @@
     border-width: 0px 0px 1px 0px;
 
     display: flex;
+    
 }
 
 .project-entry:last-child {
@@ -33,24 +38,24 @@
     flex-direction: row-reverse;
 }
 
+.project-entry:nth-child(3n - 2) .project-cover-image {
+    clip-path: $entry-mask1;
+}
+
+.project-entry:nth-child(3n - 1) .project-cover-image {
+    clip-path: $entry-mask2;
+}
+
+.project-entry:nth-child(3n) .project-cover-image {
+    clip-path: $entry-mask3;
+}
+
 .project-cover {
     width: 100%;
 }
 
 .project-cover-image {
     width: 100%;
-}
-
-.project-entry:nth-child(3n - 2) .project-cover-image {
-    clip-path: polygon(3% 4%, 100% 0%, 97% 98%, 0% 100%)
-}
-
-.project-entry:nth-child(3n - 1) .project-cover-image {
-    clip-path: polygon(0% 0%, 99% 3%, 96% 100%, 2% 96%)
-}
-
-.project-entry:nth-child(3n) .project-cover-image {
-    clip-path: polygon(0% 4%, 95% 0%, 100% 100%, 4% 97%)
 }
 
 .project-padding {
