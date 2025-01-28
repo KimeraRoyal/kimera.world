@@ -7,7 +7,6 @@ category: music
 
 tags: music
 
-banner: "/images/projects/forewards_banner.png"
-cover: "/images/projects/forewards_cover.png"
+id: forewards
 ---
 [Forewards](https://kimeraroyal.bandcamp.com/album/forewards)

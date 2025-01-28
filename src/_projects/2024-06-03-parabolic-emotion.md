@@ -7,7 +7,6 @@ category: games
 
 tags: games academia
 
-banner: "/images/projects/parabolic_banner.png"
-cover: "/images/projects/parabolic_cover.png"
+id: parabolic
 ---
 [Wherein She Completely Cuts Herself Off from Reality; A Parabolic Emotion from Recovery into Despair](https://kimeraroyal.itch.io/parabolic-emotion)
