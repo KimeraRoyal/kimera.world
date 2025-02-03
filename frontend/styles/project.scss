@@ -74,6 +74,7 @@ $entry-mask3: polygon(0% 4%, 95% 0%, 100% 100%, 4% 97%);
 
 .project-tag {
     background-color: palette.$background-color;
+    text-decoration: none;
 
     width: fit-content;
     
@@ -96,8 +97,18 @@ $entry-mask3: polygon(0% 4%, 95% 0%, 100% 100%, 4% 97%);
     font-style: italic;
 }
 
+.project-links {
+    text-align: center;
+}
+
+.project-link:nth-of-type(n + 1):not(:last-child) {
+    &::after {
+        content: ","
+    }
+}
+
 .project-banner {
     width: 100%;
 
-    margin-top: 10px;
+    margin-bottom: 10px;
 }

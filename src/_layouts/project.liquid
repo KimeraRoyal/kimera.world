@@ -1,16 +1,25 @@
 ---
 layout: default
 ---
-
 <a class="project-back" href="/projects"><< Return to Projects</a>
 
+<h1 class="title-minimal-margin">{{ data.title }}</h1>
+
 <img class="project-banner" src="/images/projects/{{ data.id }}_banner.png" />
-<h1>{{ data.title }}</h1>
+
 <div class="project-tags">
     {% for tag in data.tags %}
         <a href="../../{{ tag }}"><div class="project-tag">{{ tag }}</div></a>
     {% endfor %}
 </div>
 <div class="project-blurb">{{ data.blurb }}</div>
+
+<br/>
+
+<div class="project-links">
+  {% for link in data.links %}
+    <a class="project-link" href="{{link.link}}">{{ link.text }}</a>
+  {% endfor %}
+</div>
 
 {{ content }}

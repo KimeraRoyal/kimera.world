@@ -7,5 +7,8 @@ year: 2023
 id: forewards
 category: music
 tags: music EP
+
+links:
+    - text: "Bandcamp"
+      link: "https://kimeraroyal.bandcamp.com/album/forewards"
 ---
-[Forewards](https://kimeraroyal.bandcamp.com/album/forewards)

@@ -7,5 +7,8 @@ year: 2020
 id: pacemecha
 category: games
 tags: games
+
+links:
+    - text: "itch.io"
+      link: "https://kimeraroyal.itch.io/pacemecha"
 ---
-[Pacemecha](https://kimeraroyal.itch.io/pacemecha)

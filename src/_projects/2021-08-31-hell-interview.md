@@ -7,5 +7,8 @@ year: 2021
 id: hell_interview
 category: games
 tags: games
+
+links:
+    - text: "itch.io"
+      link: "https://kimeraroyal.itch.io/hell-interview-1000"
 ---
-[HELL INTERVIEW 1000: SPEED SACRIFICE CELEBRATION](https://kimeraroyal.itch.io/hell-interview-1000)

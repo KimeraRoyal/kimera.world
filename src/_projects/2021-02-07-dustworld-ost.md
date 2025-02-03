@@ -7,5 +7,8 @@ year: 2021
 id: dustworld
 category: music
 tags: music soundtrack album
+
+links:
+    - text: "Bandcamp"
+      link: "https://kimeraroyal.bandcamp.com/album/dustworld"
 ---
-[Dustworld OST](https://kimeraroyal.bandcamp.com/album/dustworld)
