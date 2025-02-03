@@ -6,6 +6,8 @@
 @use "project.scss";
 @use "hcard.scss";
 
+@use "toys.scss";
+
 body {
   background-color: palette.$background-color;
   background: url('/images/bg.png');
