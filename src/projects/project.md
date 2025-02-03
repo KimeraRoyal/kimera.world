@@ -9,7 +9,7 @@ prototype:
 icon: "/images/titlebar/icon_projects.png"
 ---
 
-<a href="../projects"><< Return to Projects</a><br>
+<a class="project-back" href="/projects"><< Return to Projects</a>
 
 <div class="projects">
   <ul class="project-entries">
