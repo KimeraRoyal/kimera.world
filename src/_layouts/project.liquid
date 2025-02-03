@@ -4,5 +4,11 @@ layout: default
 
 <img class="project-banner" src="/images/projects/{{ data.id }}_banner.png" />
 <h1>{{ data.title }}</h1>
+<div class="project-tags">
+    {% for tag in data.tags %}
+        <a href="../../{{ tag }}"><div class="project-tag">{{ tag }}</div></a>
+    {% endfor %}
+</div>
+<div class="project-blurb">{{ data.blurb }}</div>
 
 {{ content }}
