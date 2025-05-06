@@ -1,0 +1,13 @@
+<div style="width:480px;height:320px;max-width:100%">
+    <div id="game"></div>
+</div>
+<script>
+    EJS_player = "#game";
+    EJS_core = "gba";
+    EJS_gameName = "Funny Bird Game 2";
+    EJS_color = "#0064ff";
+    EJS_pathtodata = "https://cdn.emulatorjs.org/stable/data/";
+    EJS_gameUrl = "{{ rom | relative_url }}";
+    EJS_biosUrl = "{{'/gba/bios.bin' / relative_url}}";
+</script>
+<script src="https://cdn.emulatorjs.org/stable/data/loader.js"></script>
