@@ -6,11 +6,10 @@ year: 2020
 
 id: funnybirdgame
 category: games
-tags: games homebrew gba
+tags: games homebrew gba browser
+type: gba
 
 links:
     - text: "itch.io"
       link: "https://kimeraroyal.itch.io/funny-bird-game-2"
 ---
-Fuck
-{% render "gba", rom: '/gba/funnybirdgame.gba' %}

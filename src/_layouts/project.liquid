@@ -5,7 +5,11 @@ layout: default
 
 <h1 class="title-minimal-margin">{{ data.title }}</h1>
 
-<img class="project-banner" src="/images/projects/{{ data.id }}_banner.png" />
+{% if data.type == "gba" %}
+  <div class="project-embed">{% render "gba", rom: '/gba/{{ data.id }}.gba', scale: 2 %}</div>
+{% else %}
+  <img class="project-banner" src="/images/projects/{{ data.id }}_banner.png" />
+{% endif %}
 
 <div class="project-tags">
     {% for tag in data.tags %}
