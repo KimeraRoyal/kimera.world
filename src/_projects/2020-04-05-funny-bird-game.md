@@ -12,4 +12,6 @@ type: gba
 links:
     - text: "itch.io"
       link: "https://kimeraroyal.itch.io/funny-bird-game-2"
+    - text: "Play in Browser!"
+      link: "http://kimera.world/projects/games/funny-bird-game/"
 ---

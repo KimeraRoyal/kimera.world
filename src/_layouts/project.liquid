@@ -7,6 +7,8 @@ layout: default
 
 {% if data.type == "gba" %}
   <div class="project-embed">{% render "gba", rom: \"{{ data.id }}\", url: \"{{ site.url }}\", scale: 2 %}</div>
+{%  elsif data.type == "game" %}
+  <div class="project-embed">{% render "game", id: \"{{ data.id }}\", url: \"{{ site.url }}\", width: \"{{ data.width }}\", height: \"{{ data.height }}\" %}</div>
 {% else %}
   <img class="project-banner" src="/images/projects/{{ data.id }}_banner.png" />
 {% endif %}
