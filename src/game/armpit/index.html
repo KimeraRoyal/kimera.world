@@ -7,7 +7,7 @@
   </head>
   <body style="text-align: center; padding: 0; border: 0; margin: 0;">
     <canvas id="unity-canvas" width=640 height=360 tabindex="-1" style="width: 640px; height: 360px; background: #231F20"></canvas>
-    <script src="Build/armpit.loader.js"></script>
+    <script src="build/armpit.loader.js"></script>
     <script>
       if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
         // Mobile device style: fill the whole browser client area with the game canvas:
@@ -26,9 +26,9 @@
 
       createUnityInstance(document.querySelector("#unity-canvas"), {
         arguments: [],
-        dataUrl: "Build/armpit.data.br",
-        frameworkUrl: "Build/armpit.framework.js.br",
-        codeUrl: "Build/armpit.wasm.br",
+        dataUrl: "build/armpit.data.br",
+        frameworkUrl: "build/armpit.framework.js.br",
+        codeUrl: "build/armpit.wasm.br",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "Kimera Royal",
         productName: "a game where you sniff an armpit for 3 seconds",
