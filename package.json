@@ -16,7 +16,9 @@
     "postcss-preset-env": "^9.1.2",
     "read-cache": "^1.0.0"
   },
+  "main": "index.js",
   "dependencies": {
-    "sass": "^1.81.1"
+    "sass": "^1.81.1",
+    "express": "^4.19.2"
   }
 }
