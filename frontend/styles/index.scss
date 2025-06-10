@@ -19,6 +19,10 @@ body {
   line-height: 1.5;
 }
 
+.report {
+  background: url('/images/bg_light.png');
+}
+
 a {
   color: palette.$action-color;
   text-decoration: underline;
