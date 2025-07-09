@@ -5,6 +5,7 @@
 @use "content.scss";
 @use "project.scss";
 @use "hcard.scss";
+@use "carousel.scss";
 
 body {
   background-color: palette.$background-color;
@@ -17,6 +18,10 @@ body {
   margin: 0 8px;
   font-size: 108%;
   line-height: 1.5;
+}
+
+.report {
+  background: url('/images/bg_light.png');
 }
 
 a {

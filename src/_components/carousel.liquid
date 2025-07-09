@@ -1,0 +1,12 @@
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+<div class="carousel" style="height:{{ height }}px">
+    {% assign range = (1..count) %}
+    {% for i in range %}
+        <div class="carousel-cell" style="width:{{ width }}px;height:{{ height }}px">
+            <a href="/images/projects/{{ id }}/screenshot-{{ i }}.png">
+                <img class="carousel-image" src="/images/projects/{{ id }}/screenshot-{{ i }}-small.jpg" />
+            </a>
+        </div>
+    {% endfor %}
+</div>

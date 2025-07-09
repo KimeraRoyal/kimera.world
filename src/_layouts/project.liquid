@@ -9,6 +9,8 @@ layout: default
   <div class="project-embed">{% render "gba", rom: \"{{ data.id }}\", url: \"{{ site.url }}\", scale: 2 %}</div>
 {%  elsif data.type == "game" %}
   <div class="project-embed">{% render "game", id: \"{{ data.id }}\", url: \"{{ site.url }}\", width: \"{{ data.width }}\", height: \"{{ data.height }}\" %}</div>
+{% elsif data.screenshots %}
+  {% render "carousel", width: 480, height: 270, id: \"{{ data.id }}\", count: \"{{ data.screenshots }}\" %}
 {% else %}
   <img class="project-banner" src="/images/projects/{{ data.id }}_banner.png" />
 {% endif %}
