@@ -10,7 +10,7 @@ layout: default
 {%  elsif data.type == "game" %}
   <div class="project-embed">{% render "game", id: \"{{ data.id }}\", url: \"{{ site.url }}\", width: \"{{ data.width }}\", height: \"{{ data.height }}\" %}</div>
 {% elsif data.screenshots %}
-  {% render "carousel", width: \"{{ data.screenshot-width }}\", height: \"{{ data.screenshot-height }}\", id: \"{{ data.id }}\", count: \"{{ data.screenshots }}\" %}
+  {% render "carousel", width: \"{{ data.screenshot-width }}\", height: \"{{ data.screenshot-height }}\", id: \"{{ data.id }}\", count: \"{{ data.screenshots }}\", format: \"{{ data.screenshot-format }}\" %}
 {% else %}
   <img class="project-banner" src="/images/projects/{{ data.id }}_banner.png" />
 {% endif %}
