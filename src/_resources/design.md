@@ -9,7 +9,8 @@ A collection of visual design & web development [resources](..). It's useful to 
 - [04 fonts](http://www.04.jp.org/)
 
 ## Tools
-- [Bridgetown SSG (Used for this site!)](https://www.bridgetownrb.com)
+- [Bridgetown SSG, used to generate this site](https://www.bridgetownrb.com)
+- [Flickity, used for image carousels on this site](https://flickity.metafizzy.co/)
 
 ## Inspirations
 - [Nitrome](https://www.nitrome.com/)
