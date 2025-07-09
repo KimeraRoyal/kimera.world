@@ -8,6 +8,8 @@ id: parabolic
 category: games
 tags: games academia
 
+screenshot-width: 480
+screenshot-height: 270
 screenshots: 5
 
 links:
