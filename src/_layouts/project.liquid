@@ -24,6 +24,12 @@ layout: default
 
 <br/>
 
+{% if data.album %}
+  <div class="project-album">
+    <iframe style="border: 0; width: 600px; height: 400px;" src="https://bandcamp.com/EmbeddedPlayer/album={{ data.album }}/size=large/bgcol=ffffff/linkcol=95398b/artwork=small/transparent=true/" seamless><a href="{{ data.album-link }}">{{ data.album-name }}</a></iframe>
+  </div>
+{% endif %}
+
 <div class="project-links">
   {% for link in data.links %}
     <a class="project-link" href="{{link.link}}">{{ link.text }}</a>

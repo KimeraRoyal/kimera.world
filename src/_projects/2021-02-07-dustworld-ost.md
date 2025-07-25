@@ -8,6 +8,10 @@ id: dustworld
 category: music
 tags: music soundtrack album
 
+album: 2515906931
+album-name: Dustworld by Kimera Royal
+album-link: "https://kimeraroyal.bandcamp.com/album/dustworld"
+
 links:
     - text: "Bandcamp"
       link: "https://kimeraroyal.bandcamp.com/album/dustworld"
