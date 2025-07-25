@@ -1,10 +1,18 @@
 <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 
 {% if format %}
-    {% assign small-extension='.' | append: \'{{ format }}\' %}
+    {% if thumbnails == true %}
+        {% assign small-extension='-small.' | append: \'{{ format }}\' %}
+    {% else %}
+        {% assign small-extension='.' | append: \'{{ format }}\' %}
+    {% endif %}
     {% assign extension='.' | append: \'{{ format }}\' %}
 {% else %}
-    {% assign small-extension='-small.jpg' %}
+    {% if thumbnails == true %}
+        {% assign small-extension='-small.jpg' %}
+    {% else %}
+        {% assign small-extension='.png' %}
+    {% endif %}
     {% assign extension='.png' %}
 {%endif%}
 

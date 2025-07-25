@@ -10,6 +10,7 @@ tags: games academia
 
 screenshot-width: 480
 screenshot-height: 270
+screenshot-thumbnails: true
 screenshots: 5
 
 links:

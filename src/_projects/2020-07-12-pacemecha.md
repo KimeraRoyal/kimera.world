@@ -10,6 +10,7 @@ tags: games
 
 screenshot-width: 512
 screenshot-height: 384
+screenshot-thumbnails: false
 screenshots: 3
 screenshot-format: gif
 
