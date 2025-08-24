@@ -13,6 +13,8 @@ screenshot-height: 270
 screenshot-thumbnails: true
 screenshots: 5
 
+pdf: parabolic-emotion
+
 links:
     - text: "itch.io"
       link: "https://kimeraroyal.itch.io/parabolic-emotion"

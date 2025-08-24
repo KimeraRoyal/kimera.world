@@ -37,3 +37,7 @@ layout: default
 </div>
 
 {{ content }}
+
+{% if data.pdf %}
+  {% render "pdf", url: \"{{ site.url }}\", pdf: \"{{ data.pdf }}\" %}
+{% endif %}
