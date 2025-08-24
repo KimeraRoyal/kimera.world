@@ -24,7 +24,17 @@ $entry-mask3: polygon(0% 4%, 95% 0%, 100% 100%, 4% 97%);
     border-width: 0px 0px 1px 0px;
 
     display: flex;
+}
+
+.project-divider {
+    width: 100%;
+
+    margin-bottom: 20px;
+    padding-bottom: 20px;
     
+    border-style: solid;
+    border-color: black;
+    border-width: 0px 0px 1px 0px;
 }
 
 .project-entry:last-child {
