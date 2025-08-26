@@ -6,9 +6,14 @@ title: Posts
 icon: "/images/titlebar/icon_post.png"
 ---
 
+Title: {{ site.taxonomy_types.category.metadata.title }}
+{% for category in resource.taxonomies.category %}
+  {{ category.label }}
+{% endfor %}
+
 <ul>
   {% for entry in paginator.resources %}
-    <li>
+    <li class="posts-entry" {% if entry.category %} style="list-style-image: url('/images/posts/icon_{{ entry.category | replace: " ", "_" }}.png');" {% endif %}>
       <a href="{{ entry.relative_url }}">{{ entry.data.date}} - {{ entry.data.title }}</a>
     </li>
   {% endfor %}
