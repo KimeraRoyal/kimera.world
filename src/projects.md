@@ -6,6 +6,24 @@ title: Projects
 icon: "/images/titlebar/icon_projects.png"
 ---
 
+{% assign unique_tags = array[1] %}
+{% for resource in collections.projects.resources %}
+  {% for tag in resource.tags %}
+    {% unless unique_tags contains tag %}
+      {% capture unique_tags %}{{ unique_tags }}{% if unique_tags %}, {% endif %}{{ tag }}{% endcapture %}
+    {% endunless %}
+  {% endfor %}
+{% endfor %}
+{% assign tags = unique_tags | split: ", " | sort_natural %}
+
+<div class="projects-tag-list">
+  {% for tag in tags %}
+    <a class="project-tag" href="projects/{{ tag }}">{{ tag }}</a>
+  {% endfor %}
+</div>
+
+<div class="project-divider"></div>
+
 <div class="projects">
   <ul class="project-entries">
     {% for entry in paginator.resources %}

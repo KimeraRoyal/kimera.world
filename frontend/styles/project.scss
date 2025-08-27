@@ -76,6 +76,12 @@ $entry-mask3: polygon(0% 4%, 95% 0%, 100% 100%, 4% 97%);
     width: 100%;
 }
 
+.projects-tag-list {
+    overflow: hidden;
+
+    margin: -2px -4px 0px -4px;
+}
+
 .project-tags {
     overflow: hidden;
 

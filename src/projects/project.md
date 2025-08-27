@@ -2,7 +2,7 @@
 layout: page
 paginate:
   collection: projects
-title: Projects in category ":prototype-term"
+title: Projects with tag ":prototype-term"
 prototype:
     collection: projects
     term: tag

@@ -2,23 +2,14 @@
 layout: page
 paginate:
   collection: posts
-title: Posts
-icon: "/images/titlebar/icon_post.png"
+title: Posts in category ":prototype-term"
+prototype:
+    collection: posts
+    term: category
+icon: "/images/titlebar/icon_projects.png"
 ---
 
-{% assign unique_categories = array[1] %}
-{% for resource in collections.posts.resources %}
-  {% unless unique_categories contains resource.category %}
-    {% capture unique_categories %}{{ unique_categories }}{% if unique_categories %}, {% endif %}{{ resource.category }}{% endcapture %}
-  {% endunless %}
-{% endfor %}
-{% assign categories = unique_categories | split: ", " | sort %}
-
-<div class="projects-tag-list">
-  {% for category in categories %}
-    <a class="project-tag" href="posts/{{ category | replace: " ", "-" }}"><img src="/images/posts/icon_{{ category | replace: " ", "_" }}.png" /> {{ category }}</a>
-  {% endfor %}
-</div>
+<a class="project-back" href="/posts"><< Return to Posts</a>
 
 <ul>
   {% for entry in paginator.resources %}
