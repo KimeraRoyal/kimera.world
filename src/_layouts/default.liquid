@@ -8,8 +8,8 @@
     {% endif %}
     {% render "head", metadata: site.metadata, title: title %}
     
-    {% if data.feed == true %}
-      <link rel="alternate" type="application/rss+xml" title="feed" href="feed.xml"/>
+    {% if data.feed %}
+      <link rel="alternate" type="application/rss+xml" title="feed" href="{{ data.feed }}"/>
     {% endif %}
   </head>
   <body class="{{ data.layout }} {{ data.page_class }}">

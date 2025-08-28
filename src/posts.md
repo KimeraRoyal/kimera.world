@@ -4,7 +4,7 @@ paginate:
   collection: posts
 title: Posts
 icon: "/images/titlebar/icon_post.png"
-feed: true
+feed: "/posts/feed.xml"
 ---
 
 <div class="padding"></div>

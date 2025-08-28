@@ -4,7 +4,7 @@ paginate:
   collection: projects
 title: Projects
 icon: "/images/titlebar/icon_projects.png"
-feed: true
+feed: "/projects/feed.xml"
 ---
 
 <div class="padding"></div>
