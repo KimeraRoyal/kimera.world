@@ -15,9 +15,11 @@ icon: "/images/titlebar/icon_post.png"
 
 <ul>
   {% for entry in paginator.resources %}
-    <li class="posts-entry" {% if entry.category %} style="list-style-image: url('/images/posts/icon_{{ entry.category | replace: " ", "_" }}.png');" {% endif %}>
-      <a href="{{ entry.relative_url }}">{{ entry.data.date}} - {{ entry.data.title }}</a>
-    </li>
+    {% unless entry.data.hidden == true %}
+      <li class="posts-entry" {% if entry.category %} style="list-style-image: url('/images/posts/icon_{{ entry.category | replace: " ", "_" }}.png');" {% endif %}>
+        <a href="{{ entry.relative_url }}">{{ entry.data.date}} - {{ entry.data.title }}</a>
+      </li>
+    {% endunless %}
   {% endfor %}
 </ul>
 

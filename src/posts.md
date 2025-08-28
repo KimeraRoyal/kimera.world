@@ -12,15 +12,17 @@ icon: "/images/titlebar/icon_post.png"
 {% assign unique_tags = array[1] %}
 
 {% for resource in collections.posts.resources %}
-  {% unless unique_categories contains resource.category %}
-    {% capture unique_categories %}{{ unique_categories }}{% if unique_categories %}, {% endif %}{{ resource.category }}{% endcapture %}
-  {% endunless %}
-
-  {% for tag in resource.tags %}
-    {% unless unique_tags contains tag %}
-      {% capture unique_tags %}{{ unique_tags }}{% if unique_tags %}, {% endif %}{{ tag }}{% endcapture %}
+  {% unless resource.hidden == true %}
+    {% unless unique_categories contains resource.category %}
+      {% capture unique_categories %}{{ unique_categories }}{% if unique_categories %}, {% endif %}{{ resource.category }}{% endcapture %}
     {% endunless %}
-  {% endfor %}
+
+    {% for tag in resource.tags %}
+      {% unless unique_tags contains tag %}
+        {% capture unique_tags %}{{ unique_tags }}{% if unique_tags %}, {% endif %}{{ tag }}{% endcapture %}
+      {% endunless %}
+    {% endfor %}
+  {% endunless %}
 {% endfor %}
 
 {% assign categories = unique_categories | split: ", " | sort %}
@@ -37,9 +39,11 @@ icon: "/images/titlebar/icon_post.png"
 
 <ul>
   {% for entry in paginator.resources %}
-    <li class="posts-entry" {% if entry.category %} style="list-style-image: url('/images/posts/icon_{{ entry.category | replace: " ", "_" }}.png');" {% endif %}>
-      <a href="{{ entry.relative_url }}">{{ entry.data.date}} - {{ entry.data.title }}</a>
-    </li>
+    {% unless entry.data.hidden == true %}
+      <li class="posts-entry" {% if entry.category %} style="list-style-image: url('/images/posts/icon_{{ entry.category | replace: " ", "_" }}.png');" {% endif %}>
+        <a href="{{ entry.relative_url }}">{{ entry.data.date}} - {{ entry.data.title }}</a>
+      </li>
+    {% endunless %}
   {% endfor %}
 </ul>
 
