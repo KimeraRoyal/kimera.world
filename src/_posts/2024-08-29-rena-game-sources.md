@@ -1,6 +1,7 @@
 ---
 layout: post
 title: '"I Love Copyright Infringement!" Video Sources'
+subtitle: "A list of sources used within the following video"
 date: 2024-08-29
 category: video extra
 tags:
@@ -13,9 +14,8 @@ tags:
     - art
 icon: "/images/titlebar/icon_video.png"
 ---
-This article is a list of sources for footage within this video:
 <center><iframe width="480" height="360" src="https://www.youtube.com/embed/qRCc7l56mfg" title="I Love Copyright Infringement!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></center>
-You may read the script of this video as an article [here](../rena-game).
+You may read the script of this video as an article [here](/video/2024/08/29/rena-game).
 
 ## Music
 01. PluswPlus - Rosalis - Vernal Edge Official Soundtrack

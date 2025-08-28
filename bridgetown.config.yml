@@ -9,6 +9,9 @@ pagination:
   enabled: true
 
 collections:
+  posts:
+    output: true
+    permalink: pretty
   projects:
     output: true
     permalink: simple
