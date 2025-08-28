@@ -9,6 +9,8 @@ prototype:
 icon: "/images/titlebar/icon_projects.png"
 ---
 
+<div class="padding"></div>
+
 <a class="project-back" href="/projects"><< Return to Projects</a>
 
 <div class="projects">

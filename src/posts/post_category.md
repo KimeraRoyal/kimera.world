@@ -6,8 +6,10 @@ title: Posts in category ":prototype-term"
 prototype:
     collection: posts
     term: category
-icon: "/images/titlebar/icon_projects.png"
+icon: "/images/titlebar/icon_post.png"
 ---
+
+<div class="padding"></div>
 
 <a class="project-back" href="/posts"><< Return to Posts</a>
 

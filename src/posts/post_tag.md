@@ -6,8 +6,10 @@ title: Posts with tag ":prototype-term"
 prototype:
     collection: posts
     term: tag
-icon: "/images/titlebar/icon_projects.png"
+icon: "/images/titlebar/icon_post.png"
 ---
+
+<div class="padding"></div>
 
 <a class="project-back" href="/posts"><< Return to Posts</a>
 

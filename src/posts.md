@@ -6,6 +6,8 @@ title: Posts
 icon: "/images/titlebar/icon_post.png"
 ---
 
+<div class="padding"></div>
+
 {% assign unique_categories = array[1] %}
 {% assign unique_tags = array[1] %}
 
