@@ -2,7 +2,12 @@
 layout: default
 ---
 <header class="page-header">
-    <h1>{{ data.title }}</h1>
+    <h1>
+        {{ data.title }}
+        {% if data.feed == true %}
+            <a class="rss-icon" href="feed.xml"><img src="/images/icon_rss.png" /></a>
+        {% endif %}
+    </h1>
 </header>
 
 {{ content }}
