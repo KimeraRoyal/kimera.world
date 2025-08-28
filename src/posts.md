@@ -29,7 +29,7 @@ icon: "/images/titlebar/icon_post.png"
     <a class="project-tag" href="posts/{{ category | replace: " ", "-" }}"><img src="/images/posts/icon_{{ category | replace: " ", "_" }}.png" /> {{ category }}</a>
   {% endfor %}
   {% for tag in tags %}
-    <a class="project-tag" href="posts/{{ tag }}">{{ tag }}</a>
+    <a class="project-tag" href="posts/{{ tag | replace: " ", "-" }}">{{ tag }}</a>
   {% endfor %}
 </div>
 

@@ -7,8 +7,8 @@ layout: default
 {{ content }}
 
 <div class="project-tags">
-    <a href="/posts/{{ data.category }}"><div class="project-tag"><img src="/images/posts/icon_{{ data.category | replace: " ", "_" }}.png" /> {{ data.category }}</div></a>
+    <a href="/posts/{{ data.category | replace: " ", "-" }}"><div class="project-tag"><img src="/images/posts/icon_{{ data.category | replace: " ", "_" }}.png" /> {{ data.category }}</div></a>
     {% for tag in data.tags %}
-        <a href="/posts/{{ tag }}"><div class="project-tag">{{ tag }}</div></a>
+        <a href="/posts/{{ tag | replace: " ", "-" }}"><div class="project-tag">{{ tag }}</div></a>
     {% endfor %}
 </div>
