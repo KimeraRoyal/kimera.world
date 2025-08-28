@@ -5,8 +5,8 @@ blurb: Spooktober Jam entry. Interview volunteers and choose only the most ELIGI
 year: 2021
 
 id: hell_interview
-category: games
-tags: games
+category: game
+tags: jam
 
 links:
     - text: "itch.io"

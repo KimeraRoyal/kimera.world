@@ -19,6 +19,7 @@ icon: "/images/titlebar/icon_projects.png"
           <div class="project-padding"></div>
           <div class="project-info">
             <div class="project-tags">
+              <a class="project-tag" href="{{ entry.data.category | replace: " ", "-" }}"><img src="/images/projects/icon_{{ entry.data.category | replace: " ", "_" }}.png" /> {{ entry.data.category }}</a>
               {% for tag in entry.data.tags %}
                 <a href="{{ tag }}"><div class="project-tag">{{ tag }}</div></a>
               {% endfor %}

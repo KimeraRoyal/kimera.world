@@ -5,8 +5,8 @@ blurb: Game Boy Advance homebrew title programmed with devkitPro / libtonc.
 year: 2020
 
 id: funnybirdgame
-category: games
-tags: games homebrew gba browser
+category: game
+tags: homebrew gba browser
 type: gba
 
 links:

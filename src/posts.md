@@ -7,16 +7,29 @@ icon: "/images/titlebar/icon_post.png"
 ---
 
 {% assign unique_categories = array[1] %}
+{% assign unique_tags = array[1] %}
+
 {% for resource in collections.posts.resources %}
   {% unless unique_categories contains resource.category %}
     {% capture unique_categories %}{{ unique_categories }}{% if unique_categories %}, {% endif %}{{ resource.category }}{% endcapture %}
   {% endunless %}
+
+  {% for tag in resource.tags %}
+    {% unless unique_tags contains tag %}
+      {% capture unique_tags %}{{ unique_tags }}{% if unique_tags %}, {% endif %}{{ tag }}{% endcapture %}
+    {% endunless %}
+  {% endfor %}
 {% endfor %}
+
 {% assign categories = unique_categories | split: ", " | sort %}
+{% assign tags = unique_tags | split: ", " | sort_natural %}
 
 <div class="projects-tag-list">
   {% for category in categories %}
     <a class="project-tag" href="posts/{{ category | replace: " ", "-" }}"><img src="/images/posts/icon_{{ category | replace: " ", "_" }}.png" /> {{ category }}</a>
+  {% endfor %}
+  {% for tag in tags %}
+    <a class="project-tag" href="posts/{{ tag }}">{{ tag }}</a>
   {% endfor %}
 </div>
 

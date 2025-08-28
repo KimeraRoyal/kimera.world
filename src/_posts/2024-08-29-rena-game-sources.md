@@ -3,7 +3,14 @@ layout: post
 title: '"I Love Copyright Infringement!" Video Sources'
 date: 2024-08-29
 category: video extra
-tags: games game-studies indie-games video sources plunderludics art
+tags:
+    - games 
+    - game studies
+    - indie games 
+    - video 
+    - sources 
+    - plunderludics 
+    - art
 icon: "/images/titlebar/icon_video.png"
 ---
 This article is a list of sources for footage within this video:

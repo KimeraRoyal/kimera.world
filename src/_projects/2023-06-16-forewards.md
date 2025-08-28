@@ -6,7 +6,7 @@ year: 2023
 
 id: forewards
 category: music
-tags: music EP
+tags: EP
 
 album: 3769947335
 album-name: Forewards by TECHNOJESTER

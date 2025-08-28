@@ -5,8 +5,8 @@ blurb: My Bachelors degree dissertation project. An anthology of indefinitely re
 year: 2024
 
 id: parabolic
-category: games
-tags: games academia
+category: game
+tags: academia
 
 screenshot-width: 480
 screenshot-height: 270

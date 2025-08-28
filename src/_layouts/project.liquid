@@ -16,6 +16,7 @@ layout: default
 {% endif %}
 
 <div class="project-tags">
+    <a class="project-tag" href="{{ data.category | replace: " ", "-" }}"><img src="/images/projects/icon_{{ data.category | replace: " ", "_" }}.png" /> {{ data.category }}</a>
     {% for tag in data.tags %}
         <a href="../../{{ tag }}"><div class="project-tag">{{ tag }}</div></a>
     {% endfor %}

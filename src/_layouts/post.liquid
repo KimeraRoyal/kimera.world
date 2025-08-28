@@ -5,3 +5,10 @@ layout: default
 <h1>{{ data.title }}</h1>
 
 {{ content }}
+
+<div class="project-tags">
+    <a href="/posts/{{ data.category }}"><div class="project-tag"><img src="/images/posts/icon_{{ data.category | replace: " ", "_" }}.png" /> {{ data.category }}</div></a>
+    {% for tag in data.tags %}
+        <a href="/posts/{{ tag }}"><div class="project-tag">{{ tag }}</div></a>
+    {% endfor %}
+</div>

@@ -6,7 +6,7 @@ year: 2021
 
 id: dustworld
 category: music
-tags: music soundtrack album
+tags: soundtrack album
 
 album: 2515906931
 album-name: Dustworld by Kimera Royal

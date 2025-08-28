@@ -5,8 +5,8 @@ blurb: Commissioned mobile XR title for LoGaCulture. Join a ragtag team of hacke
 year: 2025
 
 id: cyberavebury
-category: games
-tags: games professional commission mobile xr locative
+category: game
+tags: professional commission mobile xr locative
 
 screenshot-width: 362
 screenshot-height: 640
