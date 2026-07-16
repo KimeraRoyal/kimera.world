@@ -45,7 +45,7 @@ feed: "/projects/feed.xml"
     {% for entry in paginator.resources %}
       {% unless entry.data.hidden == true %}
         <li class="project-entry">
-            <a class ="project-cover" href="{{ entry.relative_url }}"><img class="project-cover-image" src="/images/projects/{{ entry.data.id }}_cover.png" /></a>
+            <a class ="project-cover" href="{{ entry.relative_url }}"><img class="project-cover-image" src="/images/projects/{{ entry.data.id }}_cover.{{ entry.data.cover-format }}" /></a>
             <div class="project-padding"></div>
             <div class="project-info">
               <div class="project-tags">

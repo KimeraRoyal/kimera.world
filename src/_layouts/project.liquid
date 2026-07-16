@@ -12,7 +12,7 @@ layout: default
 {% elsif data.screenshots %}
   {% render "carousel", width: \"{{ data.screenshot-width }}\", height: \"{{ data.screenshot-height }}\", thumbnails: \"{{ data.screenshot-thumbnails }}\", id: \"{{ data.id }}\", count: \"{{ data.screenshots }}\", format: \"{{ data.screenshot-format }}\" %}
 {% else %}
-  <img class="project-banner" src="/images/projects/{{ data.id }}_banner.png" />
+  <img class="project-banner" src="/images/projects/{{ data.id }}_banner.{{ data.banner-format }}" />
 {% endif %}
 
 <div class="project-tags">
