@@ -1,6 +1,6 @@
 ---
 layout: post
-title: '"I Love Copyright Infringement!" Video Sources'
+title: '"Rena Game, Plunderludics, and the Artistic Resistance to Commercialism" Video Sources'
 subtitle: "A list of sources used within the following video"
 date: 2024-08-29
 category: video extra
