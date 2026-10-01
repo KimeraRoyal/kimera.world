@@ -1,4 +1,4 @@
-const build = require("./config/esbuild.defaults.js")
+import build from "./config/esbuild.defaults.js"
 
 /**
  * @typedef { import("esbuild").BuildOptions } BuildOptions
