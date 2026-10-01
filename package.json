@@ -24,5 +24,8 @@
   "allowScripts": {
     "@parcel/watcher@2.5.1": true,
     "esbuild@0.25.12": true
+  },
+  "engines": {
+    "node": ">=22.0.0"
   }
 }
