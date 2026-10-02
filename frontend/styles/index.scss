@@ -13,13 +13,17 @@ body {
   background-color: palette.$background-color;
   background: url('/images/bg.png');
 
-  font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen",
+  margin: 0 8px;
+
+  /*font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     "Helvetica", "Arial", sans-serif;
-
-  margin: 0 8px;
   font-size: 108%;
-  line-height: 1.5;
+  line-height: 1.5;*/
+  font-family: "ＭＳ Ｐゴシック", Osaka, "ヒラギノ角ゴ Pro W6", "メイリオ";
+  font-size: 14px;
+  line-height: 1.45;
+  letter-spacing: 1px;
 }
 
 .report {
@@ -34,20 +38,24 @@ a {
 
 h1 {
   margin: 0 2rem;
+
   text-align: center;
-  font-weight: 900;
-  font-size: 2.5rem;
-  color: palette.$heading-color;
+  font-size: 24px;
+  font-weight: bold;
   line-height: 1.2;
+
+  color: palette.$heading-color;
 }
 
 h2 {
   margin: 1rem 2rem;
-  text-align: center;
-  font-weight: 500;
-  font-size: 1.5rem;
-  color: palette.$heading-color;
+
+  text-align: left;
+  font-size: 16px;
+  font-weight: bold;
   line-height: 1.2;
+  
+  color: palette.$heading-color;
 }
 
 .title-minimal-margin {

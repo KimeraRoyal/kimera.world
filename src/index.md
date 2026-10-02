@@ -6,6 +6,6 @@ icon: "/images/titlebar/icon_home.png"
 
 games, music, writing, videos, etc.
 
-[itch.io](https://kimeraroyal.itch.io)
-[youtube](https://youtube.com/@TECHNOJESTER)
-[linktree](https://linktr.ee/kimeraroyal)
+[itch.io]({{ site.metadata.itch }})
+[youtube]({{ site.metadata.youtube }})
+[linktree]({{ site.metadata.linktree }})
