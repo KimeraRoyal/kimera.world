@@ -1,0 +1,14 @@
+<div class="title-bar">
+    <div class="title-bar-label title-bar-content">
+        <% if icon %>
+            <img class="title-bar-icon" src="<%= relative_url(icon) %>" />
+        <% end %>
+        <%= label %>
+    </div>
+    
+    <div class="title-bar-buttons title-bar-content">
+        <img class="title-bar-button" src="<%= relative_url('/images/titlebar/icon_minimise.png') %>" />
+        <img class="title-bar-button" src="<%= relative_url('/images/titlebar/icon_maximise.png') %>" />
+        <img class="title-bar-button" src="<%= relative_url('/images/titlebar/icon_close.png') %>" />
+    </div>
+</div>

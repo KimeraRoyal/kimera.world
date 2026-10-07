@@ -1,0 +1,12 @@
+<header>
+  <a href="<%= relative_url('/') %>"><img src="<%= relative_url('/images/logo.png') %>" alt="https://kimera.world" /></a>
+</header>
+
+<nav>
+  <ul class="navbar-icons">
+    <li><%= render "navbaricon", label: 'Home', icon: 'home', url: '/' %></li>
+    <li><%= render "navbaricon", label: 'About', icon: 'about', url: '/about' %></li>
+    <li><%= render "navbaricon", label: 'Projects', icon: 'projects', url: '/projects' %></li>
+    <li><%= render "navbaricon", label: 'Posts', icon: 'blog', url: '/posts' %></li>
+  </ul>
+</nav>

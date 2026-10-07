@@ -8,11 +8,11 @@ id: pacemecha
 category: game
 tags: jam
 
-screenshot-width: 512
-screenshot-height: 384
-screenshot-thumbnails: false
+screenshot_width: 512
+screenshot_height: 384
+screenshot_thumbnails: false
 screenshots: 3
-screenshot-format: gif
+screenshot_format: gif
 
 links:
     - text: "itch.io"

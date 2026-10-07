@@ -9,8 +9,8 @@ category: music
 tags: EP
 
 album: 3769947335
-album-name: Forewards by TECHNOJESTER
-album-link: "https://kimeraroyal.bandcamp.com/album/forewards"
+album_name: Forewards by TECHNOJESTER
+album_link: "https://kimeraroyal.bandcamp.com/album/forewards"
 
 links:
     - text: "Bandcamp"

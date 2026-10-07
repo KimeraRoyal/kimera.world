@@ -8,9 +8,9 @@ id: cyberavebury
 category: game
 tags: professional commission mobile xr locative
 
-screenshot-width: 362
-screenshot-height: 640
-screenshot-thumbnails: false
+screenshot_width: 362
+screenshot_height: 640
+screenshot_thumbnails: false
 screenshots: 6
 
 links:

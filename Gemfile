@@ -9,3 +9,7 @@ gem "puma", "< 7"
 gem "bridgetown-feed"
 
 gem "bridgetown-sitemap"
+
+gem "jim",
+    :git => "https://github.com/surrim/jim.git",
+    :branch => 'main'

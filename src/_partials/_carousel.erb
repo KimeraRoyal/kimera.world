@@ -1,0 +1,28 @@
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+<script src="<%= asset_path 'javascript/carousel.js' %>" defer></script>
+
+<% if format %>
+    <% if thumbnails == true %>
+        <% small_extension="-small.#{format}" %>
+    <% else %>
+        <% small_extension="#{format}" %>
+    <% end %>
+    <% extension="#{format}" %>
+<% else %>
+    <% if thumbnails == true %>
+        <% small_extension='-small.jpg' %>
+    <% else %>
+        <% small_extension='.png' %>
+    <% end %>
+    <% extension='.png' %>
+<% end %>
+
+<div class="carousel" style="height:<%= height %>px">
+    <% for i in 1..count %>
+        <div class="carousel-cell" style="width:<%= width %>px;height:<%= height %>px">
+            <a href="/images/projects/<%= id %>/screenshot-<%= i %><%= extension %>">
+                <img class="carousel-image" src="/images/projects/<%= id %>/screenshot-<%= i %><%= small_extension %>" />
+            </a>
+        </div>
+    <% end %>
+</div>

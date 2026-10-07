@@ -8,9 +8,9 @@ id: parabolic
 category: game
 tags: academia
 
-screenshot-width: 480
-screenshot-height: 270
-screenshot-thumbnails: true
+screenshot_width: 480
+screenshot_height: 270
+screenshot_thumbnails: true
 screenshots: 5
 
 pdf: parabolic-emotion

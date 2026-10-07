@@ -1,0 +1,48 @@
+---
+layout: default
+---
+<a class="project-back" href="/projects"><< Return to Projects</a>
+
+<h1 class="title-minimal-margin"><%= data.title %></h1>
+
+<% if data.type == "gba" %>
+  <div class="project-embed"><%= render "gba", rom: data.id, url: site.config.url, scale: 2 %></div>
+<% elsif data.type == "game" %>
+  <div class="project-embed"><%= render "game", id: data.id, url: site.config.url, width: data.width, height: data.height %></div>
+<% elsif data.screenshots %>
+  <%= render "carousel", width: data.screenshot_width, height: data.screenshot_height, thumbnails: data.screenshot_thumbnails, id: data.id, count: data.screenshots, format: data.screenshot_format %>
+<% else %>
+  <img class="project-banner" src="/images/projects/<%= data.id %>_banner.<%= data.banner_format %>" />
+<% end %>
+
+<div class="project-tags">
+    <a class="project-tag" href="<%= data.category.gsub(" ", "-") %>"><img src="/images/projects/icon_<%= data.category.gsub(" ", "_") %>.png" /> <%= data.category %></a>
+    <% data.tags.each do |tag| %>
+        <a href="../../<%= tag %>"><div class="project-tag"><%= tag %></div></a>
+    <% end %>
+</div>
+<div class="project-blurb"><%= data.blurb %></div>
+
+<br/>
+
+<% if data.album %>
+  <div class="project-album">
+    <iframe style="border: 0; width: 600px; height: 400px;" src="https://bandcamp.com/EmbeddedPlayer/album=<%= data.album %>/size=large/bgcol=ffffff/linkcol=95398b/artwork=small/transparent=true/" seamless><a href="<%= data.album_link %>"><%= data.album_name %></a></iframe>
+  </div>
+<% end %>
+
+<div class="project-links">
+  <% data.links.each do |link| %>
+    <a class="project-link" href="<%=link.link%>"><%= link.text %></a>
+  <% end %>
+</div>
+
+<% if content.to_s.empty? or data.pdf %>
+  <div class="project-divider"></div>
+<% end %>
+
+<%= yield %>
+
+<% if data.pdf %>
+  <%= render "pdf", url: site.config.url, pdf: data.pdf %>
+<% end %>

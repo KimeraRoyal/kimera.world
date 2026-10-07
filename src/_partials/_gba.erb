@@ -1,4 +1,4 @@
-<div class="gba" style="width:{{240 | times: scale}}px;height:{{160 | times: scale}}px;max-width:100%">
+<div class="gba" style="width:<%= 240 * scale%>px;height:<%=160 * scale%>px;max-width:100%">
     <div id="game"></div>
 </div>
 <script>
@@ -8,7 +8,7 @@
     EJS_color = "#CD5BC7";
     EJS_backgroundColor = '#FAE8FF';
     EJS_pathtodata = "https://cdn.emulatorjs.org/stable/data/";
-    EJS_gameUrl = "{{ url }}/gba/{{ rom }}.gba";
-    EJS_biosUrl = "{{ url }}/gba/bios.bin";
+    EJS_gameUrl = "<%= url %>/gba/<%= rom %>.gba";
+    EJS_biosUrl = "<%= url %>/gba/bios.bin";
 </script>
 <script src="https://cdn.emulatorjs.org/stable/data/loader.js"></script>

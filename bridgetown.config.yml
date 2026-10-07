@@ -1,7 +1,7 @@
 url: "https://kimera.world"
 
 permalink: pretty
-template_engine: liquid
+template_engine: erb
 
 timezone: Europe/London
 
@@ -15,9 +15,9 @@ collections:
   projects:
     output: true
     permalink: simple
-  resources:
+  played:
     output: true
-    permalink: simple
+    permalink: pretty
 
 feed:
   collections:
@@ -25,3 +25,5 @@ feed:
       path: "/posts/feed.xml"
     projects:
       path: "/projects/feed.xml"
+    played:
+      path: "/played/feed.xml"

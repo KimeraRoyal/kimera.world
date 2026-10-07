@@ -1,0 +1,12 @@
+<a class="navbar-element" href="<%= relative_url(url) %>">
+    <% if icon == nil %>
+        <% icon='file' %>
+    <% end %>
+    <div class="navbar-element-icon-region" title="<%= label %>">
+        <div class="navbar-icon-container">
+            <img class="navbar-element-icon" src="<%= relative_url("images/desktop/#{icon}.png") %>" />
+        </div>
+        <img class="navbar-element-arrow" src="<%= relative_url('images/desktop/arrow.png') %>" />
+    </div>
+    <div class="navbar-label <%= "navbar-label-#{icon}" %>" title="<%= label %>"/>
+</a>
