@@ -5,7 +5,7 @@ subtitle: "Let us pay honour to the brave trainers dirtied upon desire paths"
 date: 2026-10-06
 icon: "/images/titlebar/icon_post.png"
 ---
-I've been playing indie roguelites in passing basically forever, so I've been more or less aware of the general trends in the genre. Long gone are the FTL's, Nuclear Thrones, and The Binding of Isaacs of the world (okay well, that last one is still doing pretty good actually). Now, the big successes everyone wants to emulate are Balatro and Slay the Spire, mostly resulting in an uninteresting porridge of titles whose elevator pitch was probably "it's like Balatro but, instead of being about poker, it's about betting on horse racing" or whatever.
+I've been playing indie roguelites in passing basically forever, enough to be aware of the general trends in the genre. Long gone are the FTLs, Nuclear Thrones, and The Binding of Isaacs of the world (okay well, that last one is still doing pretty good actually). Now, the big successes everyone wants to emulate are Balatro and Slay the Spire, mostly resulting in an uninteresting porridge of titles whose elevator pitch was probably "it's like Balatro but, instead of being about poker, it's about betting on horse racing" or whatever.
 
 2024's Peglin marked exciting new territory because, instead of being Balatro with a different form of gambling, it's Slay the Spire with pachinko[^1]! That's slightly different!!! I thought it was incorporated decently, being well integrated into both combat and, charmingly, how you choose the path to take between levels - trying to land your ball in the specific hole corresponding to the room you want to move to.
 
