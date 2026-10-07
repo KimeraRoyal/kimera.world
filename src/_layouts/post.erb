@@ -5,14 +5,29 @@ layout: default
 <header>
     <h1><%= data.title %></h1>
     <h2><%= data.subtitle %></h2>
+    <div class="header-fields">
+        <div class="header-field author">by <a href="/about">Kimera Royal</a></div>
+        <div class="header-field when">
+            posted: <%= data.date.strftime("%d/%m/%Y") %>
+            <% if data.updated_on != nil %>
+                <span class="when-update">
+                    <em>(updated: <%= data.updated_on.strftime("%d/%m/%Y") %>)</em>
+                </span>
+            <% end %>
+        </div>
+    </div>
     <hr class="header-divider" />
 </header>
 
 <%= yield %>
 
-<div class="project-tags">
-    <a href="/posts/<%= data.category.gsub(" ", "-") %>"><div class="project-tag"><img src="/images/posts/icon_<%= data.category.gsub(" ", "_") %>.png" /> <%= data.category %></div></a>
-    <% data.tags.each do |tag| %>
-        <a href="/posts/<%= tag.gsub(" ", "-") %>"><div class="project-tag"><%= tag %></div></a>
-    <% end %>
-</div>
+<% unless data.category.to_s.empty? && data.tags.empty? %>
+    <div class="project-tags">
+        <% unless data.category.to_s.empty? %>
+            <a href="/posts/<%= data.category.gsub(" ", "-") %>"><div class="project-tag"><img src="/images/posts/icon_<%= data.category.gsub(" ", "_") %>.png" /> <%= data.category %></div></a>
+        <% end %>
+        <% data.tags.each do |tag| %>
+            <a href="/posts/<%= tag.gsub(" ", "-") %>"><div class="project-tag"><%= tag %></div></a>
+        <% end %>
+    </div>
+<% end %>

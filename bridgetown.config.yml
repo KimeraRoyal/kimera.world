@@ -15,9 +15,6 @@ collections:
   projects:
     output: true
     permalink: simple
-  played:
-    output: true
-    permalink: pretty
 
 feed:
   collections:
@@ -25,5 +22,3 @@ feed:
       path: "/posts/feed.xml"
     projects:
       path: "/projects/feed.xml"
-    played:
-      path: "/played/feed.xml"

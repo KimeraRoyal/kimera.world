@@ -3,7 +3,9 @@ layout: played
 title: 'Peglin'
 subtitle: "Let us pay honour to the brave trainers dirtied upon desire paths"
 date: 2026-10-06
-icon: "/images/titlebar/icon_post.png"
+updated_on: 2026-10-07
+category: played
+icon: "/images/titlebar/icon_played.png"
 ---
 I've been playing indie roguelites in passing basically forever, enough to be aware of the general trends in the genre. Long gone are the FTLs, Nuclear Thrones, and The Binding of Isaacs of the world (okay well, that last one is still doing pretty good actually). Now, the big successes everyone wants to emulate are Balatro and Slay the Spire, mostly resulting in an uninteresting porridge of titles whose elevator pitch was probably "it's like Balatro but, instead of being about poker, it's about betting on horse racing" or whatever.
 
