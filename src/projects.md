@@ -7,6 +7,8 @@ icon: "/images/titlebar/icon_projects.png"
 feed: "/projects/feed.xml"
 ---
 
+<div class="padding"></div>
+
 <div class="projects">
   <ul class="project-entries">
     <% paginator.each do |entry| %>
