@@ -4,7 +4,7 @@
     <% if data.hidden == true %>
       <meta name="robots" content="noindex" />
     <% end %>
-    <%= render "head", metadata: site.metadata, title: data.title %>
+    <%= render "head", metadata: site.metadata, title: data.title, subtitle: nil %>
   </head>
   <% if data.page_class %>
     <% body_class = "#{data.layout}-#{data.page_class}" %>

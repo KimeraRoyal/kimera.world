@@ -3,7 +3,12 @@
 <% resource_title = strip_html(strip_newlines(title)) %>
 <title><% if resource_title != "Index" %><%= resource_title %> | <%= metadata.title %><% else %><%= metadata.title %><% end %></title>
 
-<meta name="description" content="<%= metadata.description %>" />
+<% if subtitle %>
+    <% description = subtitle %>
+<% else %>
+    <% description = metadata.description %>
+<% end %>
+<meta name="description" content="<%= description %>" />
 
 <link rel="stylesheet" href="<%= asset_path :css %>" />
 <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">

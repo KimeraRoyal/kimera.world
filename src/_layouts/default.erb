@@ -6,7 +6,13 @@
     <% else %>
       <% title = data.title %>
     <% end %>
-    <%= render "head", metadata: site.metadata, title: title %>
+
+    <% if data.subtitle %>
+      <% subtitle = data.subtitle %>
+    <% else %>
+      <% subtitle = nil %>
+    <% end %>
+    <%= render "head", metadata: site.metadata, title: title, subtitle: subtitle %>
     
     <% if data.feed %>
       <link rel="alternate" type="application/rss+xml" title="feed" href="<%= data.feed %>"/>
