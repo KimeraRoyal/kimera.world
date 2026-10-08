@@ -1,42 +1,76 @@
+@use "sizes.scss";
 @use "titlebar.scss";
 
-$width: 400px;
-$height: 250px;
+$mobile-width: sizes.$hcard-width + sizes.$body-margin * 2;
 
 .profile {
-    width: $width;
-    min-height: $height + titlebar.$height;
+  width: sizes.$hcard-width;
+  max-width: sizes.$hcard-width;
+  min-height: sizes.$hcard-height + sizes.$titlebar-height;
   
-    margin: 2rem auto 4rem;
+  margin: 2rem auto 4rem;
+  
+  @media (max-width: $mobile-width) {
+      width: 100%;
   }
+}
   
-  .profile ul {
-    list-style-type: none;
+.profile ul {
+  list-style-type: none;
   
-    margin: 0px;
-    padding: 0px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.u-photo {
+  width: 128px;
+  height: 128px;
+}
+  
+.bio {
+  display: flex;
+  @media (max-width: $mobile-width) {
+    display: block;
   }
+}
   
-  .bio {
-    display: flex;
+.bio-text {
+  margin-left: 10px;
+  
+  text-align: left;
+
+  @media (max-width: $mobile-width) {
+    margin: 10px 0px 0px 0px;
   }
-  
-  .bio-text {
-    margin-left: 10px;
-  
-    text-align: left;
-  }
-  
-  .elsewhere {
-    margin: 0px;
-    padding: 10px 0px 0px 0px;
-  }
-  
-  .external-links {
-    text-align: center;
-  }
-  
-  .external-links li {
+}
+
+.role li {
+  @media (max-width: $mobile-width) {
     width: 50%;
     float: left;
+    text-align: center;
   }
+
+  @media (max-width: 300px) {
+    width: 100%;
+  }
+}
+  
+.elsewhere {
+  margin: 0px;
+  padding: 10px 0px 0px 0px;
+}
+  
+.external-links {
+  text-align: center;
+  clear: left;
+}
+  
+.external-links li {
+  width: 50%;
+  float: left;
+
+  @media (max-width: 300px) {
+    width: 100%;
+  }
+}

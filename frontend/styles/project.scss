@@ -16,8 +16,7 @@ $entry-mask3: polygon(0% 4%, 95% 0%, 100% 100%, 4% 97%);
 }
 
 .project-entry {
-    margin-bottom: 2em;
-    padding-bottom: 15px;
+    padding: 1em 0em;
     
     border-bottom: 2px dotted palette.$background-color-dark;
 
@@ -37,7 +36,6 @@ $entry-mask3: polygon(0% 4%, 95% 0%, 100% 100%, 4% 97%);
 
 .project-entry:last-child {
     margin-bottom: 0px;
-    padding-bottom: 0px;
 
     border-width: 0px 0px 0px 0px;
 }

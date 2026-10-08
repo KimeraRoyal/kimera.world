@@ -1,7 +1,6 @@
 @use 'palette.scss';
+@use 'sizes.scss';
 @use 'fonts.scss';
-
-$height: 18px;
 
 .title-bar {
     background-image: url("/images/titlebar/bg.png");
@@ -12,7 +11,7 @@ $height: 18px;
   
     display: block;
   
-    height: $height;
+    height: sizes.$titlebar-height;
   
     padding: 0px 0px 0px 4px;
   }
@@ -22,7 +21,7 @@ $height: 18px;
     align-items: center;
   
     width: max-content;
-    height: $height;
+    height: sizes.$titlebar-height;
     padding: 0px;
     margin: 0px;
   }
@@ -30,13 +29,13 @@ $height: 18px;
   .title-bar-label {
     @extend %font-04b25;
     text-align: left;
-    line-height: $height;
+    line-height: sizes.$titlebar-height;
   }
   
   .title-bar-buttons {
     float: right;
   
-    margin-top: -$height;
+    margin-top: - sizes.$titlebar-height;
   }
   
   .title-bar-icon {

@@ -14,7 +14,7 @@ tags:
     - art
 icon: "/images/titlebar/icon_video.png"
 ---
-<center><iframe width="480" height="360" src="https://www.youtube.com/embed/qRCc7l56mfg" title="I Love Copyright Infringement!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></center>
+<center><iframe class="content-video" width="480" height="360" src="https://www.youtube.com/embed/qRCc7l56mfg" title="I Love Copyright Infringement!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></center>
 You may reference all sources used within this video [here](/video-extra/2024/08/29/rena-game-sources).
 
 ## Introduction

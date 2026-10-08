@@ -1,13 +1,15 @@
 @use "palette.scss";
+@use "sizes.scss";
 
-$width: 750px;
+$mobile-width: sizes.$main-width + sizes.$body-margin * 2;
 
 main {
     margin: 2rem auto 4rem;
-    width: $width;
+    width: sizes.$main-width;
+    max-width: sizes.$main-width;
   
-    @media (max-width: 500px) {
-        padding: 16px 16px 50px;
+    @media (max-width: $mobile-width) {
+        width: 100%;
     }
 }
   
@@ -25,7 +27,18 @@ main {
 .content {
     position: relative;
 
-    padding: 25px 25px 25px 25px;
+    padding: sizes.$content-padding;
+}
+
+.content-video {
+  @media (max-width: 548px) {
+    width: 100%;
+  }
+}
+
+.content-box-bottom {
+    margin-bottom: 1em;
+    clear: left;
 }
 
 .footer-author {
