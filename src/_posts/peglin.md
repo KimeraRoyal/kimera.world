@@ -14,7 +14,7 @@ I've been playing indie roguelites in passing basically forever, enough to be aw
 
 2024's Peglin marked exciting new territory because, instead of being a gambling themed Balatro clone, it's a gambling themed *Slay the Spire* clone! That's slightly different!!! I thought the pachinko[^1] elements were incorporated decently, being integrated elegantly into both combat and, charmingly, how you choose the path to take between levels - trying to land your ball in the specific hole corresponding to the room you want to move to.
 
-<% figure = define_image("images/played/peglin/level_transition.png", "images/played/peglin")
+<% figure = define_image("_images/played/peglin/level_transition.png", "images/played/peglin")
     .add_format("png", 1920)
     .add_format("webp", 640) %>
 [![A screenshot of Peglin's gameplay, featuring the transition between levels](<%= relative_url figure.render(1) %>){: style="width:640px;"}](<%= relative_url figure.render(0) %>)
@@ -25,7 +25,7 @@ Less thought seems to have been put into the framework that pachinko gimmick is 
 
 The locations are uninspired, the characters are all stock fantasy fodder, the game uncritically lifts many of its elements directly from Slay the Spire with little-to-no changes. What really sealed my philosophical issues with this game was that they spent the time to give all of the keywords silly ball themed names but then refer to your collection of orbs as a "deck". God forbid you call it something on-theme like a pouch or whatever. No, it's a deck because it's called a deck in Slay the Spire[^2]. This game is fine but I *knew* it was going to be fine because I've played the games that did it all first - recently[^3]!
 
-<% figure = define_image("images/played/peglin/map.png", "images/played/peglin")
+<% figure = define_image("_images/played/peglin/map.png", "images/played/peglin")
     .add_format("png", 1920)
     .add_format("webp", 640, 85) %>
 [![A screenshot of Peglin's gameplay, featuring the map screen](<%= relative_url figure.render(1) %>){: style="width:640px;"}](<%= relative_url figure.render(0) %>)

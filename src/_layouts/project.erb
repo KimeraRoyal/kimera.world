@@ -10,7 +10,7 @@ layout: default
 <% elsif data.type == "game" %>
   <div class="project-embed"><%= render "game", id: data.id, url: site.config.url, width: data.width, height: data.height %></div>
 <% elsif data.screenshots %>
-  <%= render "carousel", width: data.screenshot_width, height: data.screenshot_height, thumbnails: data.screenshot_thumbnails, id: data.id, count: data.screenshots, format: data.screenshot_format %>
+  <%= render "carousel", id: data.id, width: data.screenshot_width, thumbnail_width: data.screenshot_thumb_width, count: data.screenshots, format: data.screenshot_format %>
 <% else %>
   <img class="project-banner" src="/images/projects/<%= data.id %>_banner.<%= data.banner_format %>" />
 <% end %>

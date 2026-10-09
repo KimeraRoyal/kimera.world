@@ -2,27 +2,32 @@
 <script src="<%= asset_path 'javascript/carousel.js' %>" defer></script>
 
 <% if format %>
-    <% if thumbnails == true %>
-        <% small_extension="-small.#{format}" %>
-    <% else %>
-        <% small_extension="#{format}" %>
-    <% end %>
     <% extension="#{format}" %>
+    <% small_extension="#{format}" %>
 <% else %>
-    <% if thumbnails == true %>
-        <% small_extension='-small.jpg' %>
-    <% else %>
-        <% small_extension='.png' %>
-    <% end %>
-    <% extension='.png' %>
+    <% extension='png' %>
+    <% small_extension='webp' %>
 <% end %>
+
+
+<% ratio = screenshot_width.to_f / thumbnail_width %>
+<% height = get_image_height("_images/projects/#{id}/screenshot-1.#{extension}") / ratio %>
 
 <div class="carousel" style="height:<%= height %>px">
     <% for i in 1..count %>
-        <div class="carousel-cell" style="width:<%= width %>px;height:<%= height %>px">
-            <a href="/images/projects/<%= id %>/screenshot-<%= i %><%= extension %>">
-                <img class="carousel-image" src="/images/projects/<%= id %>/screenshot-<%= i %><%= small_extension %>" />
-            </a>
+        <% figure = define_image("_images/projects/#{id}/screenshot-#{i}.#{extension}", "images/projects/#{id}")%>
+        
+        <div class="carousel-cell" style="width:<%= thumbnail_width %>px;height:<%= height %>px">
+            <% unless width == thumbnail_width && format %>
+                <% figure.add_format(extension, width).add_format(small_extension, thumbnail_width) %>
+                <a href="<%= relative_url figure.render(0) %>">
+                    <img class="carousel-image" src="<%= relative_url figure.render(1) %>" />
+                </a>
+            <% else %>
+                <a href="<%= relative_url figure.render() %>">
+                    <img class="carousel-image" src="<%= relative_url figure.render() %>" />
+                </a>
+            <% end %>
         </div>
     <% end %>
 </div>

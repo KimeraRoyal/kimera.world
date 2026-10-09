@@ -9,8 +9,7 @@ category: game
 tags: jam
 
 screenshot_width: 512
-screenshot_height: 384
-screenshot_thumbnails: false
+screenshot_thumb_width: 512
 screenshots: 3
 screenshot_format: gif
 
