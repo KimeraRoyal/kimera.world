@@ -3,15 +3,21 @@ layout: played
 title: 'Peglin'
 subtitle: "Let us pay honour to the brave trainers dirtied upon desire paths"
 date: 2026-10-06
-updated_on: 2026-10-08
+updated_on: 2026-10-09
 category: played
+tags:
+    - PC
+    - steam
 icon: "/images/titlebar/icon_played.png"
 ---
 I've been playing indie roguelites in passing basically forever, enough to be aware of the general trends in the genre. Long gone are the days of FTL, Nuclear Throne, and The Binding of Isaac (okay well, that last one is still doing pretty good). Now, the big successes everyone wants to emulate are Balatro and Slay the Spire, mostly resulting in an uninteresting porridge of titles whose elevator pitch was probably "it's like Balatro but, instead of being about poker, it's about betting on horse racing" or whatever.
 
-2024's Peglin marked exciting new territory because, instead of being Balatro with a different form of gambling, it's Slay the Spire about a different form of gambling - pachinko[^1]! That's slightly different!!! I thought it was incorporated decently, being well integrated into both combat and, charmingly, how you choose the path to take between levels - trying to land your ball in the specific hole corresponding to the room you want to move to.
+2024's Peglin marked exciting new territory because, instead of being a gambling themed Balatro clone, it's a gambling themed *Slay the Spire* clone! That's slightly different!!! I thought the pachinko[^1] elements were incorporated decently, being integrated elegantly into both combat and, charmingly, how you choose the path to take between levels - trying to land your ball in the specific hole corresponding to the room you want to move to.
 
-![A screenshot of Peglin's gameplay, featuring the transition between levels](<%= relative_url 'images/played/peglin/level_transition.png' %>){: style="width:640px;"}
+<% figure = define_image("images/played/peglin/level_transition.png", "images/played/peglin")
+    .add_format("png", 1920)
+    .add_format("webp", 640) %>
+[![A screenshot of Peglin's gameplay, featuring the transition between levels](<%= relative_url figure.render(1) %>){: style="width:640px;"}](<%= relative_url figure.render(0) %>)
 *Fig.1 - Peglin's level transition features bouncing a ball across the pegboard, with the hole it ends up in determining which room you move onto*{: .post-figure-caption }
 {: .post-figure }
 
@@ -19,7 +25,10 @@ Less thought seems to have been put into the framework that pachinko gimmick is 
 
 The locations are uninspired, the characters are all stock fantasy fodder, the game uncritically lifts many of its elements directly from Slay the Spire with little-to-no changes. What really sealed my philosophical issues with this game was that they spent the time to give all of the keywords silly ball themed names but then refer to your collection of orbs as a "deck". God forbid you call it something on-theme like a pouch or whatever. No, it's a deck because it's called a deck in Slay the Spire[^2]. This game is fine but I *knew* it was going to be fine because I've played the games that did it all first - recently[^3]!
 
-![A screenshot of Peglin's gameplay, featuring the map screen](<%= relative_url 'images/played/peglin/map.png' %>){: style="width:640px;"}
+<% figure = define_image("images/played/peglin/map.png", "images/played/peglin")
+    .add_format("png", 1920)
+    .add_format("webp", 640, 85) %>
+[![A screenshot of Peglin's gameplay, featuring the map screen](<%= relative_url figure.render(1) %>){: style="width:640px;"}](<%= relative_url figure.render(0) %>)
 *Fig.2 - In contrast to the cute gimmick for traversing it, the map uses the exact same room types and layout as Slay the Spire.*{: .post-figure-caption }
 {: .post-figure }
 

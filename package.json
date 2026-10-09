@@ -19,7 +19,8 @@
   "main": "index.js",
   "dependencies": {
     "sass": "^1.81.1",
-    "express": "^4.19.2"
+    "express": "^4.19.2",
+    "image_processor": "./image_processor"
   },
   "allowScripts": {
     "@parcel/watcher@2.5.1": true,

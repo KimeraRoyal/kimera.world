@@ -9,3 +9,5 @@ gem "puma", "< 7"
 gem "bridgetown-feed"
 
 gem "bridgetown-sitemap"
+
+gem "image_processor", :path => "./image_processor"

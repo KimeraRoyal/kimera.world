@@ -24,10 +24,10 @@ layout: default
 <% unless data.category.to_s.empty? && data.tags.empty? %>
     <div class="project-tags">
         <% unless data.category.to_s.empty? %>
-            <a href="/posts/<%= data.category.gsub(" ", "-") %>"><div class="project-tag"><img src="/images/posts/icon_<%= data.category.gsub(" ", "_") %>.png" /> <%= data.category %></div></a>
+            <a href="/posts/<%= data.category.gsub(" ", "-").downcase %>"><div class="project-tag"><img src="/images/posts/icon_<%= data.category.gsub(" ", "_") %>.png" /> <%= data.category %></div></a>
         <% end %>
         <% data.tags.each do |tag| %>
-            <a href="/posts/<%= tag.gsub(" ", "-") %>"><div class="project-tag"><%= tag %></div></a>
+            <a href="/posts/<%= tag.gsub(" ", "-").downcase %>"><div class="project-tag"><%= tag %></div></a>
         <% end %>
     </div>
 <% end %>
