@@ -139,8 +139,10 @@ $entry-mask3: polygon(0% 4%, 95% 0%, 100% 100%, 4% 97%);
 
 .project-banner {
     width: 100%;
+    max-width: 640px;
 
-    margin-bottom: 10px;
+    display: block;
+    margin: 0px auto 10px auto;
 }
 
 .project-album {

@@ -12,7 +12,9 @@ layout: default
 <% elsif data.screenshots %>
   <%= render "carousel", id: data.id, width: data.screenshot_width, thumbnail_width: data.screenshot_thumb_width, count: data.screenshots, format: data.screenshot_format %>
 <% else %>
-  <img class="project-banner" src="/images/projects/<%= data.id %>_banner.<%= data.banner_format %>" />
+  <% figure = define_image("_images/projects/#{data.id}_banner.#{data.banner_format}", "images/projects")
+    .add_format(data.banner_thumb_format, 640) %>
+  <img class="project-banner" src="<%= relative_url figure.render(0) %>" />
 <% end %>
 
 <div class="project-tags">

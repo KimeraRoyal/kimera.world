@@ -1,3 +1,5 @@
 icon: "/images/titlebar/icon_projects.png"
 cover_format: png
+cover_thumb_format: webp
 banner_format: png
+banner_thumb_format: webp

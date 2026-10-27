@@ -14,7 +14,10 @@ feed: "/projects/feed.xml"
     <% paginator.each do |entry| %>
       <% unless entry.data.hidden == true %>
         <li class="project-entry">
-          <a class ="project-cover" href="<%= relative_url(entry) %>"><img class="project-cover-image" src="/images/projects/<%= entry.data.id %>_cover.<%= entry.data.cover_format %>" /></a>
+          <% figure = define_image("_images/projects/#{entry.data.id}_cover.#{entry.data.cover_format}", "images/projects")
+            .add_format(entry.data.cover_thumb_format, 630) %>
+          <% cover_path = relative_url(figure.render(0)) %>
+          <a class ="project-cover" href="<%= relative_url entry %>"><img class="project-cover-image" src="<%= cover_path %>" /></a>
             <div class="project-padding"></div>
             <div class="project-info">
               <div class="project-tags">
